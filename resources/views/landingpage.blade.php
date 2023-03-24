@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="ThemeMarch">
     <!-- Favicon Icon -->
-    <link rel="icon" href="{{ asset('assets/img/Logo Kamera Comparison3.png') }}">
+    <link rel="icon" href="{{ asset('assets/images/Logo Kamera Comparison3.png') }}">
     <!-- Site Title -->
     <title>Camera Comparison</title>
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap.min.css') }}">
@@ -34,8 +34,6 @@
                                 <li><a href="#home" class="cs-smoth_scroll">Home</a></li>
                                 <li><a href="#about" class="cs-smoth_scroll">About</a></li>
                                 <li><a href="#feature" class="cs-smoth_scroll">Feature</a></li>
-                                <li><a href="#pricing" class="cs-smoth_scroll">Pricing</a></li>
-                                <li><a href="#news" class="cs-smoth_scroll">News</a></li>
                                 <li><a href="#contact" class="cs-smoth_scroll">Contact</a></li>
                             </ul>
                         </div>
@@ -67,8 +65,10 @@
                     <div class="cs-hero_secondary_title">Cameris
                     </div>
                     <h1 class="cs-hero_title">Camera <br>Comparison</h1>
-                    <div class="cs-hero_subtitle">Pilih 2 kamera yang kamu sukai, lalu bandingkan antara kedua-nya</div>
-                    <a href="#" class="cs-btn"><span>Start Free Trial</span></a>
+                    <div class="cs-hero_subtitle">"Compare Now and Make an Informed Decision! <br> Find Your Perfect
+                        Camera
+                        Today."</div>
+                    <a href="#" class="cs-btn"><span>Start For Free</span></a>
                 </div>
                 <div class="cs-hero_shapes">
                     <div class="cs-shape cs-shape_position1">
@@ -100,10 +100,10 @@
         <div class="cs-height_95 cs-height_lg_70"></div>
         <div class="container">
             <div class="cs-seciton_heading cs-style1 text-center">
-                <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Office &
-                    Inventory</div>
+                <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Camera
+                    Comparison</div>
                 <div class="cs-height_10 cs-height_lg_10"></div>
-                <h3 class="cs-section_title">Our best inventory</h3>
+                <h3 class="cs-section_title">Penggunaan Fitur Aplikasi Cameris</h3>
             </div>
             <div class="cs-height_50 cs-height_lg_40"></div>
             <div class="row">
@@ -115,9 +115,12 @@
                         </div>
                         <div class="cs-iconbox_in">
                             <div class="cs-iconbox_number cs-primary_font">01</div>
-                            <h3 class="cs-iconbox_title">Recipe management & costing</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the printing and
-                                formal typesetting</div>
+                            <h3 class="cs-iconbox_title">Pilih Menu yang sudah disedikan</h3>
+                            <div class="cs-iconbox_subtitle">Berisi terdapat 4
+                                menu pada navbar website Cameris antara lain
+                                halama kamera, lensa, fullset dan compare camera. Pilihlah salah satu diantaranya
+                                dan nikmati layanan didalamnya terdapat informasi akurat dan tepat untuk kebutuhan Anda.
+                            </div>
                         </div>
                     </div>
                     <div class="cs-height_25 cs-height_lg_25"></div>
@@ -129,9 +132,13 @@
                         </div>
                         <div class="cs-iconbox_in">
                             <div class="cs-iconbox_number cs-primary_font">02</div>
-                            <h3 class="cs-iconbox_title">Stock management & inventory</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the printing and
-                                formal typesetting</div>
+                            <h3 class="cs-iconbox_title">Pada bagian menu halaman kamera dan lensa</h3>
+                            <div class="cs-iconbox_subtitle">
+                                Berisi list daftar kamera maupun lensa dan fitur pencarian/fitur filter untuk
+                                mempermudah pencarian dan mempersingkat waktu dan terdapat spesifikasi dan fitur
+                                dari
+                                berbagai jenis kamera maupun lensa
+                            </div>
                         </div>
                     </div>
                     <div class="cs-height_25 cs-height_lg_25"></div>
@@ -144,9 +151,11 @@
                         </div>
                         <div class="cs-iconbox_in">
                             <div class="cs-iconbox_number cs-primary_font">03</div>
-                            <h3 class="cs-iconbox_title">Purchase management systeme</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the printing and
-                                formal typesetting</div>
+                            <h3 class="cs-iconbox_title">Pada bagian menu halaman Fullset</h3>
+                            <div class="cs-iconbox_subtitle">Berisi pengguna dapat memilih kamera maupun lensa sesuai
+                                keinginan dan budget maupun bisa
+                                menggunakan fitur rekomendasi dari website Cameris sehingga mempermudah pencarian dan
+                                mempersingkat waktu.</div>
                         </div>
                     </div>
                     <div class="cs-height_25 cs-height_lg_25"></div>
@@ -158,9 +167,12 @@
                         </div>
                         <div class="cs-iconbox_in">
                             <div class="cs-iconbox_number cs-primary_font">04</div>
-                            <h3 class="cs-iconbox_title">Powerful inventory reporting</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the printing and
-                                formal typesetting</div>
+                            <h3 class="cs-iconbox_title">Pada bagian menu halaman Compare</h3>
+                            <div class="cs-iconbox_subtitle">Berisi perbandingan hasil dari kedua
+                                kamera. Pastikan untuk memilih kamera dengan spesifikasi yang
+                                sesuai dengan kebutuhan Anda.
+                                Perhatikan perbedaan dan kelebihan
+                                masing-masing kamera pada spesifikasi yang telah dipilih. </div>
                         </div>
                     </div>
                     <div class="cs-height_25 cs-height_lg_25"></div>
@@ -186,42 +198,46 @@
                 <div class="col-xl-6">
                     <div class="cs-height_0 cs-height_lg_40"></div>
                     <div class="cs-seciton_heading cs-style1">
-                        <div class="cs-section_subtitle">About The POS</div>
+                        <div class="cs-section_subtitle">About The Cameris</div>
                         <div class="cs-height_10 cs-height_lg_10"></div>
-                        <h3 class="cs-section_title">Best solution for point of sale about details </h3>
+                        <h6 class="cs-section_title">Solusi terbaik untuk membandingkan kamera sesuai dengan kebutuhan
+                            dan anggaran Anda</h6>
                     </div>
                     <div class="cs-height_20 cs-height_lg_20"></div>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                        Lorem Ipsum the & been the industry's. It was popularised in the 1960s <br>
-                        with the release of Letraset sheets containing Lorem Ipsum passages.
+                        Camera Comparison adalah menyediakan perbandingan spesifikasi dan fitur
+                        dari berbagai jenis kamera. Kami memahami bahwa memilih kamera yang sesuai dengan kebutuhan
+                        Anda bisa menjadi tugas yang membingungkan dan memakan waktu. Oleh karena itu, kami
+                        menyediakan layanan perbandingan kamera yang mudah digunakan dan informatif akurat dan
+                        bermanfaat untuk membantu Anda
+                        menemukan kamera yang tepat untuk kebutuhan fotografi Anda.
                     </p>
                     <div class="cs-height_15 cs-height_lg_15"></div>
                     <div class="cs-list_1_wrap">
                         <ul class="cs-list cs-style1 cs-mp0">
                             <li>
-                                <span class="cs-list_icon">
+                                {{-- <span class="cs-list_icon">
                                     <img src="{{ asset('assets/img/icons/tick.svg') }}" alt="Tick">
                                 </span>
                                 <div class="cs-list_right">
                                     <h3>Other point of sale information</h3>
                                     <p>But I must explain to you how all this mistaken in denouncing pleasure and
                                         praising pain was born and I will give.</p>
-                                </div>
+                                </div> --}}
                             </li>
                             <li>
-                                <span class="cs-list_icon">
+                                {{-- <span class="cs-list_icon">
                                     <img src="{{ asset('assets/img/icons/tick.svg') }}" alt="Tick">
                                 </span>
                                 <div class="cs-list_right">
                                     <h3>Best process system POS</h3>
                                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                                         praesentium voluptatum deleniti at.</p>
-                                </div>
+                                </div> --}}
                             </li>
                         </ul>
-                        <div class="cs-list_img wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"><img
-                                src="{{ asset('assets/img/about_img_2.png') }}" alt="About"></div>
+                        {{-- <div class="cs-list_img wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"><img
+                                src="{{ asset('assets/img/about_img_2.png') }}" alt="About"></div> --}}
                     </div>
                 </div>
             </div>
@@ -251,9 +267,10 @@
                                 <img src="{{ asset('assets/img/icons/icon_box_5.svg') }}" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Effortless card</h3>
-                                <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing
-                                    and typese Ipsum is simply dummy</div>
+                                <h3 class="cs-iconbox_title">Perbandingan Kamera yang Lengkap</h3>
+                                <div class="cs-iconbox_subtitle"> Website Kamera Comparison menyediakan perbandingan
+                                    kamera yang lengkap dengan fitur-fitur, spesifikasi, dan harga dari berbagai
+                                    merek dan tipe kamera.</div>
                             </div>
                         </div>
                         <div class="cs-height_25 cs-height_lg_25"></div>
@@ -264,9 +281,10 @@
                                 <img src="{{ asset('assets/img/icons/icon_box_6.svg') }}" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Software accuracy</h3>
-                                <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing
-                                    and typese Ipsum is simply dummy</div>
+                                <h3 class="cs-iconbox_title">Visualisasi yang Jelas</h3>
+                                <div class="cs-iconbox_subtitle">Tampilan yang user-friendly dan mudah dipahami
+                                    memudahkan pengguna untuk membandingkan fitur dan spesifikasi kamera secara
+                                    langsung.</div>
                             </div>
                         </div>
                         <div class="cs-height_25 cs-height_lg_25"></div>
@@ -277,9 +295,10 @@
                                 <img src="{{ asset('assets/img/icons/icon_box_7.svg') }}" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Customization</h3>
-                                <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing
-                                    and typese Ipsum is simply dummy</div>
+                                <h3 class="cs-iconbox_title">Filter dan Sorting:</h3>
+                                <div class="cs-iconbox_subtitle">Pengguna dapat menggunakan filter dan sorting untuk
+                                    memudahkan pengguna dalam menemukan kamera yang sesuai dengan kebutuhan dan
+                                    anggaran pengguna.</div>
                             </div>
                         </div>
                         <div class="cs-height_25 cs-height_lg_25"></div>
@@ -290,9 +309,9 @@
                                 <img src="{{ asset('assets/img/icons/icon_box_8.svg') }}" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Customer data</h3>
-                                <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing
-                                    and typese Ipsum is simply dummy</div>
+                                <h3 class="cs-iconbox_title">Rekomendasi Kamera Terbaik</h3>
+                                <div class="cs-iconbox_subtitle">Website ini menyajikan rekomendasi kamera terbaik
+                                    berdasarkan kategori dan budget yang diinginkan.</div>
                             </div>
                         </div>
                         <div class="cs-height_25 cs-height_lg_25"></div>
@@ -303,9 +322,10 @@
                                 <img src="assets/img/icons/icon_box_9.svg" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Seamless checkout</h3>
-                                <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing
-                                    and typese Ipsum is simply dummy</div>
+                                <h3 class="cs-iconbox_title">Akses Mudah</h3>
+                                <div class="cs-iconbox_subtitle">Website ini dapat diakses dari berbagai perangkat
+                                    seperti desktop, laptop, tablet, dan smartphone sehingga pengguna dapat
+                                    membandingkan kamera kapan saja dan di mana saja.</div>
                             </div>
                         </div>
                         <div class="cs-height_25 cs-height_lg_25"></div>
@@ -316,9 +336,10 @@
                                 <img src="assets/img/icons/icon_box_10.svg" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">High speed process</h3>
-                                <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing
-                                    and typese Ipsum is simply dummy</div>
+                                <h3 class="cs-iconbox_title">Informasi yang Akurat: </h3>
+                                <div class="cs-iconbox_subtitle">Website ini menyajikan informasi spesifikasi
+                                    kamera yang akurat dan terupdate untuk membantu pengguna menemukan kamera yang
+                                    tepat.</div>
                             </div>
                         </div>
                         <div class="cs-height_25 cs-height_lg_25"></div>
@@ -352,7 +373,7 @@
                     <div class="cs-accordians cs-style1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="cs-accordian cs-white_bg active">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q1.</span> What is a point of sale?</h2>
+                                <h2 class="cs-accordian_title"><span>Q1.</span>Apa itu perbandingan kamera?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -363,15 +384,16 @@
                                 </span>
                             </div>
                             <div class="cs-accordian-body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard sincethe 15000s, printer took a galley of type and
-                                scrambl.
+                                Perbandingan kamera adalah sebuah fitur yang memungkinkan pengguna untuk membandingkan
+                                spesifikasi, fitur, harga, dan kinerja antara dua atau lebih jenis kamera untuk membantu
+                                mereka memilih produk yang tepat sesuai kebutuhan mereka.
                             </div>
                         </div><!-- .cs-accordian -->
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q2.</span> What is the best POS system?</h2>
+                                <h2 class="cs-accordian_title"><span>Q2.</span>Apa jenis kamera yang bisa dibandingkan?
+                                </h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -382,15 +404,15 @@
                                 </span>
                             </div>
                             <div class="cs-accordian-body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard sincethe 15000s, printer took a galley of type and
-                                scrambl.
+                                Pada website kami, Anda dapat membandingkan berbagai jenis kamera seperti kamera DSLR,
+                                kamera mirrorless, kamera point-and-shoot, dan kamera aksi.
                             </div>
                         </div><!-- .cs-accordian -->
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q3.</span> How does a POS system work?</h2>
+                                <h2 class="cs-accordian_title"><span>Q3.</span> Apa yang harus diperhatikan dalam
+                                    memilih kamera?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -401,15 +423,16 @@
                                 </span>
                             </div>
                             <div class="cs-accordian-body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard sincethe 15000s, printer took a galley of type and
-                                scrambl.
+                                Ada beberapa faktor yang harus diperhatikan dalam memilih kamera, seperti jenis
+                                fotografi yang ingin Anda lakukan, kualitas gambar yang diinginkan, ukuran dan berat
+                                kamera, fitur tambahan seperti stabilisasi gambar, dan tentu saja, anggaran.
                             </div>
                         </div><!-- .cs-accordian -->
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q4.</span> How to use a POS System?</h2>
+                                <h2 class="cs-accordian_title"><span>Q4.</span>Apakah perbandingan kamera dapat
+                                    membantu saya menghemat waktu dalam memilih kamera yang tepat?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -420,15 +443,16 @@
                                 </span>
                             </div>
                             <div class="cs-accordian-body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard sincethe 15000s, printer took a galley of type and
-                                scrambl.
+                                Ya, dengan membandingkan spesifikasi dan fitur kamera secara langsung, Anda dapat
+                                mempersempit pilihan kamera yang paling cocok dengan kebutuhan dan anggaran Anda, dan
+                                menghemat waktu dalam mencari informasi secara terpisah.
                             </div>
                         </div><!-- .cs-accordian -->
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q5.</span> How can i make a payment?</h2>
+                                <h2 class="cs-accordian_title"><span>Q5.</span>Apakah harga kamera di website kami sama
+                                    dengan harga di toko offline?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -439,9 +463,10 @@
                                 </span>
                             </div>
                             <div class="cs-accordian-body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard sincethe 15000s, printer took a galley of type and
-                                scrambl.
+                                Harga yang tercantum di website kami mungkin berbeda dengan harga di toko offline karena
+                                faktor-faktor seperti promo atau diskon yang berbeda-beda. Namun, kami berusaha untuk
+                                memberikan harga yang akurat dan terbaru untuk membantu Anda dalam memilih kamera yang
+                                tepat.
                             </div>
                         </div><!-- .cs-accordian -->
                     </div>
@@ -466,8 +491,8 @@
                     </div>
                     <div class="cs-height_20 cs-height_lg_20"></div>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply
-                        dummy text of the Lorem Ipsum is simply dummy text of the printing and typesetting.
+                        Stay up-to-date with the latest camera comparisons and reviews! Follow us on social media for
+                        daily updates, expert advice, and insider tips.
                     </p>
                     <div class="cs-height_15 cs-height_lg_15"></div>
                     <div class="cs-iconbox cs-style3">
@@ -496,7 +521,7 @@
                         </div>
                         <div class="cs-iconbox_right">
                             <h2 class="cs-iconbox_title">Email Address</h2>
-                            <div class="cs-iconbox_subtitle">demo@gmail.com</div>
+                            <div class="cs-iconbox_subtitle">cameracomparison@gmail.com</div>
                         </div>
                     </div>
                 </div>
