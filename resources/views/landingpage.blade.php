@@ -32,8 +32,10 @@
                         <div class="cs-nav">
                             <ul class="cs-nav_list">
                                 <li><a href="#home" class="cs-smoth_scroll">Home</a></li>
+                                <li><a href="#tutorial" class="cs-smoth_scroll">Tutorial</a></li>
                                 <li><a href="#about" class="cs-smoth_scroll">About</a></li>
                                 <li><a href="#feature" class="cs-smoth_scroll">Feature</a></li>
+                                <li><a href="#faq" class="cs-smoth_scroll">Faq</a></li>
                                 <li><a href="#contact" class="cs-smoth_scroll">Contact</a></li>
                             </ul>
                         </div>
@@ -67,7 +69,7 @@
                     <h1 class="cs-hero_title">Camera <br>Comparison</h1>
                     <div class="cs-hero_subtitle">"Compare Now and Make an Informed Decision! <br> Find Your Perfect
                         Camera
-                        Today."</div>
+                        Today"</div>
                     <a href="#" class="cs-btn"><span>Start For Free</span></a>
                 </div>
                 <div class="cs-hero_shapes">
@@ -96,12 +98,11 @@
     <!-- End Hero -->
 
     <!-- Start Main Feature -->
-    <section class="cs-bg" data-src="assets/img/feature_bg.svg">
+    <section id="tutorial" class="cs-bg" data-src="assets/img/feature_bg.svg">
         <div class="cs-height_95 cs-height_lg_70"></div>
         <div class="container">
             <div class="cs-seciton_heading cs-style1 text-center">
-                <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Camera
-                    Comparison</div>
+                <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Cameris</div>
                 <div class="cs-height_10 cs-height_lg_10"></div>
                 <h3 class="cs-section_title">Penggunaan Fitur Aplikasi Cameris</h3>
             </div>
@@ -118,8 +119,9 @@
                             <h3 class="cs-iconbox_title">Pilih Menu yang sudah disedikan</h3>
                             <div class="cs-iconbox_subtitle">Berisi terdapat 4
                                 menu pada navbar website Cameris antara lain
-                                halama kamera, lensa, fullset dan compare camera. Pilihlah salah satu diantaranya
-                                dan nikmati layanan didalamnya terdapat informasi akurat dan tepat untuk kebutuhan Anda.
+                                halaman kamera, lensa, fullset dan compare camera. Pilihlah salah satu diantaranya
+                                dan nikmati layanan didalamnya terdapat informasi akurat dan tepat untuk kebutuhan
+                                Anda.
                             </div>
                         </div>
                     </div>
@@ -135,9 +137,9 @@
                             <h3 class="cs-iconbox_title">Pada bagian menu halaman kamera dan lensa</h3>
                             <div class="cs-iconbox_subtitle">
                                 Berisi list daftar kamera maupun lensa dan fitur pencarian/fitur filter untuk
-                                mempermudah pencarian dan mempersingkat waktu dan terdapat spesifikasi dan fitur
+                                mempermudah pencarian dan mempersingkat waktu, terdapat spesifikasi dan fitur
                                 dari
-                                berbagai jenis kamera maupun lensa
+                                berbagai jenis kamera maupun lensa.
                             </div>
                         </div>
                     </div>
@@ -152,9 +154,11 @@
                         <div class="cs-iconbox_in">
                             <div class="cs-iconbox_number cs-primary_font">03</div>
                             <h3 class="cs-iconbox_title">Pada bagian menu halaman Fullset</h3>
-                            <div class="cs-iconbox_subtitle">Berisi pengguna dapat memilih kamera maupun lensa sesuai
+                            <div class="cs-iconbox_subtitle">Berisi anda dapat memilih kamera maupun lensa
+                                sesuai
                                 keinginan dan budget maupun bisa
-                                menggunakan fitur rekomendasi dari website Cameris sehingga mempermudah pencarian dan
+                                menggunakan fitur rekomendasi dari website Cameris sehingga mempermudah pencarian
+                                dan
                                 mempersingkat waktu.</div>
                         </div>
                     </div>
@@ -191,14 +195,14 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                     <div class="cs-left_full_width cs-space110">
                         <div class="cs-left_sided_img">
-                            <img src="{{ asset('assets/img/about_img_1.png') }}" alt="About">
+                            <img src="{{ asset('assets/images/kamera13.png') }}" alt="About">
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="cs-height_0 cs-height_lg_40"></div>
                     <div class="cs-seciton_heading cs-style1">
-                        <div class="cs-section_subtitle">About The Cameris</div>
+                        <div class="cs-section_subtitle">Tentang Cameris</div>
                         <div class="cs-height_10 cs-height_lg_10"></div>
                         <h6 class="cs-section_title">Solusi terbaik untuk membandingkan kamera sesuai dengan kebutuhan
                             dan anggaran Anda</h6>
@@ -208,42 +212,15 @@
                         Camera Comparison adalah menyediakan perbandingan spesifikasi dan fitur
                         dari berbagai jenis kamera. Kami memahami bahwa memilih kamera yang sesuai dengan kebutuhan
                         Anda bisa menjadi tugas yang membingungkan dan memakan waktu. Oleh karena itu, kami
-                        menyediakan layanan perbandingan kamera yang mudah digunakan dan informatif akurat dan
+                        menyediakan layanan perbandingan kamera yang mudah digunakan tersedia informatif akurat dan
                         bermanfaat untuk membantu Anda
                         menemukan kamera yang tepat untuk kebutuhan fotografi Anda.
                     </p>
-                    <div class="cs-height_15 cs-height_lg_15"></div>
-                    <div class="cs-list_1_wrap">
-                        <ul class="cs-list cs-style1 cs-mp0">
-                            <li>
-                                {{-- <span class="cs-list_icon">
-                                    <img src="{{ asset('assets/img/icons/tick.svg') }}" alt="Tick">
-                                </span>
-                                <div class="cs-list_right">
-                                    <h3>Other point of sale information</h3>
-                                    <p>But I must explain to you how all this mistaken in denouncing pleasure and
-                                        praising pain was born and I will give.</p>
-                                </div> --}}
-                            </li>
-                            <li>
-                                {{-- <span class="cs-list_icon">
-                                    <img src="{{ asset('assets/img/icons/tick.svg') }}" alt="Tick">
-                                </span>
-                                <div class="cs-list_right">
-                                    <h3>Best process system POS</h3>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                        praesentium voluptatum deleniti at.</p>
-                                </div> --}}
-                            </li>
-                        </ul>
-                        {{-- <div class="cs-list_img wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"><img
-                                src="{{ asset('assets/img/about_img_2.png') }}" alt="About"></div> --}}
-                    </div>
                 </div>
             </div>
         </div>
         <div class="cs-height_100 cs-height_lg_70"></div>
-        <div class="cs-height_135 cs-height_lg_0"></div>
+        {{-- <div class="cs-height_135 cs-height_lg_0"></div> --}}
     </section>
     <!-- End About -->
 
@@ -254,10 +231,10 @@
             <div class="cs-height_95 cs-height_lg_70"></div>
             <div class="container">
                 <div class="cs-seciton_heading cs-style1 text-center">
-                    <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">POS
-                        Features</div>
+                    <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        Cameris</div>
                     <div class="cs-height_10 cs-height_lg_10"></div>
-                    <h3 class="cs-section_title">Available features</h3>
+                    <h3 class="cs-section_title">Fitur dan Kelebihan Aplikasi Cameris</h3>
                 </div>
                 <div class="cs-height_50 cs-height_lg_40"></div>
                 <div class="row">
@@ -268,7 +245,8 @@
                             </div>
                             <div class="cs-iconbox_in">
                                 <h3 class="cs-iconbox_title">Perbandingan Kamera yang Lengkap</h3>
-                                <div class="cs-iconbox_subtitle"> Website Kamera Comparison menyediakan perbandingan
+                                <div class="cs-iconbox_subtitle"> Website Kamera Comparison menyediakan
+                                    perbandingan
                                     kamera yang lengkap dengan fitur-fitur, spesifikasi, dan harga dari berbagai
                                     merek dan tipe kamera.</div>
                             </div>
@@ -295,8 +273,9 @@
                                 <img src="{{ asset('assets/img/icons/icon_box_7.svg') }}" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Filter dan Sorting:</h3>
-                                <div class="cs-iconbox_subtitle">Pengguna dapat menggunakan filter dan sorting untuk
+                                <h3 class="cs-iconbox_title">Filter dan Sorting</h3>
+                                <div class="cs-iconbox_subtitle">Pengguna dapat menggunakan filter dan sorting
+                                    untuk
                                     memudahkan pengguna dalam menemukan kamera yang sesuai dengan kebutuhan dan
                                     anggaran pengguna.</div>
                             </div>
@@ -336,7 +315,7 @@
                                 <img src="assets/img/icons/icon_box_10.svg" alt="Icon">
                             </div>
                             <div class="cs-iconbox_in">
-                                <h3 class="cs-iconbox_title">Informasi yang Akurat: </h3>
+                                <h3 class="cs-iconbox_title">Informasi yang Akurat </h3>
                                 <div class="cs-iconbox_subtitle">Website ini menyajikan informasi spesifikasi
                                     kamera yang akurat dan terupdate untuk membantu pengguna menemukan kamera yang
                                     tepat.</div>
@@ -354,9 +333,9 @@
     <section id="faq" class="cs-gradient_bg_1">
         <div class="cs-height_95 cs-height_lg_70"></div>
         <div class="cs-seciton_heading cs-style1 text-center">
-            <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">POS FAQ</div>
+            <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">CAMERIS</div>
             <div class="cs-height_10 cs-height_lg_10"></div>
-            <h3 class="cs-section_title">Frequently asked questions</h3>
+            <h3 class="cs-section_title">Pertanyaan yang sering diajukan</h3>
         </div>
         <div class="cs-height_50 cs-height_lg_40"></div>
         <div class="container">
@@ -364,7 +343,7 @@
                 <div class="col-xl-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="cs-left_full_width cs-space110">
                         <div class="cs-left_sided_img">
-                            <img src="{{ asset('assets/img/faq_img.png') }}" alt="About">
+                            <img src="{{ asset('assets/images/kamera6.png') }}" alt="About">
                         </div>
                     </div>
                     <div class="cs-height_0 cs-height_lg_40"></div>
@@ -373,7 +352,7 @@
                     <div class="cs-accordians cs-style1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="cs-accordian cs-white_bg active">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q1.</span>Apa itu perbandingan kamera?</h2>
+                                <h2 class="cs-accordian_title"><span>Q1.</span> Apa itu perbandingan kamera?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -385,14 +364,15 @@
                             </div>
                             <div class="cs-accordian-body">
                                 Perbandingan kamera adalah sebuah fitur yang memungkinkan pengguna untuk membandingkan
-                                spesifikasi, fitur, harga, dan kinerja antara dua atau lebih jenis kamera untuk membantu
+                                spesifikasi, fitur, harga, dan kinerja antara dua jenis kamera untuk membantu
                                 mereka memilih produk yang tepat sesuai kebutuhan mereka.
                             </div>
                         </div><!-- .cs-accordian -->
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q2.</span>Apa jenis kamera yang bisa dibandingkan?
+                                <h2 class="cs-accordian_title"><span>Q2.</span> Apa jenis kamera yang bisa
+                                    dibandingkan?
                                 </h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -431,7 +411,7 @@
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q4.</span>Apakah perbandingan kamera dapat
+                                <h2 class="cs-accordian_title"><span>Q4.</span> Apakah perbandingan kamera dapat
                                     membantu saya menghemat waktu dalam memilih kamera yang tepat?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -451,7 +431,8 @@
                         <div class="cs-height_25 cs-height_lg_25"></div>
                         <div class="cs-accordian cs-white_bg">
                             <div class="cs-accordian_head">
-                                <h2 class="cs-accordian_title"><span>Q5.</span>Apakah harga kamera di website kami sama
+                                <h2 class="cs-accordian_title"><span>Q5.</span> Apakah harga kamera di website kami
+                                    sama
                                     dengan harga di toko offline?</h2>
                                 <span class="cs-accordian_toggle">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -485,14 +466,14 @@
                 <div class="col-xl-5 col-lg-8">
                     <div class="cs-seciton_heading cs-style1">
                         <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                            Contract Us</div>
+                            Kontak kami</div>
                         <div class="cs-height_10 cs-height_lg_10"></div>
-                        <h3 class="cs-section_title">If you have any quiries, fill free to contact us</h3>
+                        <h3 class="cs-section_title">Jika Anda memiliki pertanyaan, silakan hubungi kami</h3>
                     </div>
                     <div class="cs-height_20 cs-height_lg_20"></div>
                     <p>
-                        Stay up-to-date with the latest camera comparisons and reviews! Follow us on social media for
-                        daily updates, expert advice, and insider tips.
+                        "Stay up-to-date with the latest camera comparisons and reviews! Follow us on social media for
+                        daily updates, expert advice, and insider tips."
                     </p>
                     <div class="cs-height_15 cs-height_lg_15"></div>
                     <div class="cs-iconbox cs-style3">
@@ -500,8 +481,8 @@
                             <img src="{{ asset('assets/img/icons/contact_icon_1.svg') }}" alt="Icon">
                         </div>
                         <div class="cs-iconbox_right">
-                            <h2 class="cs-iconbox_title">Address</h2>
-                            <div class="cs-iconbox_subtitle">4117 Leroy LaneHarold, KY 41635,</div>
+                            <h2 class="cs-iconbox_title">Alamat</h2>
+                            <div class="cs-iconbox_subtitle">jl. Panglima Sudirman</div>
                         </div>
                     </div>
                     <div class="cs-height_30 cs-height_lg_30"></div>
@@ -510,8 +491,8 @@
                             <img src="{{ asset('assets/img/icons/contact_icon_2.svg') }}" alt="Icon">
                         </div>
                         <div class="cs-iconbox_right">
-                            <h2 class="cs-iconbox_title">Contract Number</h2>
-                            <div class="cs-iconbox_subtitle">+606-243-4966</div>
+                            <h2 class="cs-iconbox_title">Kontak nomor</h2>
+                            <div class="cs-iconbox_subtitle">+123-243-4966</div>
                         </div>
                     </div>
                     <div class="cs-height_30 cs-height_lg_30"></div>
@@ -520,7 +501,7 @@
                             <img src="{{ asset('assets/img/icons/contact_icon_3.svg') }}" alt="Icon">
                         </div>
                         <div class="cs-iconbox_right">
-                            <h2 class="cs-iconbox_title">Email Address</h2>
+                            <h2 class="cs-iconbox_title">Alamat email</h2>
                             <div class="cs-iconbox_subtitle">cameracomparison@gmail.com</div>
                         </div>
                     </div>
@@ -528,7 +509,7 @@
                 <div class="col-xl-6 offset-xl-1">
                     <div class="cs-height_40 cs-height_lg_40"></div>
                     <form class="cs-contact_form">
-                        <h2 class="cs-contact_form_title">Please fill up the form</h2>
+                        <h2 class="cs-contact_form_title">Harap isi formulir</h2>
                         <div class="row">
                             <div class="col-lg-6">
                                 <input type="text" class="cs-form_field" placeholder="Name">
@@ -547,7 +528,7 @@
                                 <div class="cs-height_25 cs-height_lg_25"></div>
                             </div>
                             <div class="col-lg-12">
-                                <button class="cs-btn cs-size_md"><span>Send Message</span></button>
+                                <button class="cs-btn cs-size_md"><span>Kirim Pesan</span></button>
                             </div>
                         </div>
                     </form>
@@ -563,14 +544,12 @@
         <div class="cs-height_75 cs-height_lg_70"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="cs-footer_item">
                         <div class="cs-footer_widget_text">
                             {{-- // <img src="{{ asset('assets/images/Logo Kamera Comparison3.png') }}" alt="Logo"> --}}
                             <p>
-                                On the other hand, we denounce <br>
-                                with righteous indignation and <br>
-                                dislike men who are so
+                                Sosial Media Cameris
                             </p>
                         </div>
                         <div class="cs-height_30 cs-height_lg_30"></div>
@@ -584,33 +563,23 @@
                 </div><!-- .col -->
                 <div class="col-lg-3 col-md-6">
                     <div class="cs-footer_item widget_nav_menu">
-                        <h2 class="cs-widget_title">Available POS</h2>
+                        <h2 class="cs-widget_title">Menu</h2>
                         <ul class="menu">
-                            <li><a href="#">Food Delivery</a></li>
-                            <li><a href="#">Furniture Store</a></li>
-                            <li><a href="#">Coffee Shop</a></li>
-                            <li><a href="#">Clothing Store</a></li>
-                            <li><a href="#">eCommerce</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#tutorial">Tutorial</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#feature">Feature</a></li>
+                            <li><a href="#faq">Faq</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div><!-- .col -->
                 <div class="col-lg-3 col-md-6">
                     <div class="cs-footer_item widget_nav_menu">
-                        <h2 class="cs-widget_title">Company</h2>
-                        <ul class="menu">
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="cs-footer_item widget_nav_menu">
-                        <h2 class="cs-widget_title">Subscribe us</h2>
+                        <h2 class="cs-widget_title">Subscribe kami</h2>
                         <form class="cs-newsletter">
-                            <div class="cs-newsletter_text">Get Business news, tip and solutions to your problems from
-                                our experts.</div>
+                            <div class="cs-newsletter_text">Dapatkan informasi dan solusi untuk masalah Anda
+                                dari pakar kami.</div>
                             <div class="cs-height_20 cs-height_lg_20"></div>
                             <input type="text" class="cs-form_field" placeholder="Enter your email">
                             <div class="cs-height_10 cs-height_lg_10"></div>
@@ -622,7 +591,7 @@
         </div>
         <div class="cs-height_40 cs-height_lg_30"></div>
         <div class="cs-copyright text-center">
-            <div class="container">Copyright 2022. Created by Thememarch.</div>
+            <div class="container">Copyright 2023. Created by Cameris</div>
         </div>
     </footer>
     <!-- End Footer -->
