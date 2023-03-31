@@ -13,27 +13,15 @@ return new class extends Migration
     {
         Schema::create('lens', function (Blueprint $table) {
             $table->id();
-            $table->string('model');
-            $table->string('type');
-            $table->integer('focal_length');
-            $table->integer('maximum_aperture');
-            $table->integer('minimum_aperture');
-            $table->string('mount');
-            $table->integer('filter_size');
-            $table->string('lens_construction');
-            $table->integer('diagonal_angle_of_view');
-            $table->integer('horizontal_angle_of_view');
-            $table->integer('vertical_angle_of_view');
-            $table->string('image_stabilization');
-            $table->boolean('weather_sealed');
-            $table->string('focus_type');
-            $table->integer('price');
-            $table->string('manufacturer');
-            $table->integer('minimum_focus_distance');
-            $table->string('autofocus');
-            $table->string('dimensions');
-            $table->string('image_quality');
-            $table->string('image');
+            $table->float('bobot');
+            $table->string('diameter_panjang');
+            $table->string('aperture_minimum');
+            $table->integer('ukuran_filter');
+            $table->string('jarak_pemfokusan_terdekat');
+            $table->float('pembesaran_maks');
+            $table->integer('jumlah_bilah_diafragma');
+            $table->integer('harga');
+            $table->string('gambar');
             $table->softDeletes();
             $table->timestamps();
         });
