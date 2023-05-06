@@ -24,10 +24,10 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="single-img zoom">
-                                            <img src="{{ asset('images/kamera12.jpg') }}" alt="Product Image">
+                                            <img src="" alt="Product Image">
                                             <div class="inner-stuff">
                                                 <div class="gallery-item"
-                                                    data-src="assets/images/product-details/product-details-1.jpg">
+                                                    data-src="{{ asset('assets2/images/product-details/product-details-1.jpg') }}">
                                                     <a href="javascript:void(0)">
                                                         <i class="lastudioicon-full-screen"></i>
                                                     </a>
@@ -40,9 +40,10 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="product-details-description">
-                        <h4 class="product-name">High quality vase bottle.</h4>
+                        <h4 class="product-name">{{ $camera['nama_kamera'] }}</h4>
                         <div class="price">
                             <span class="sale-price">$240.00</span>
                         </div>
@@ -56,78 +57,75 @@
                         </div>
                         <div class="product-info">
 
-                            @if (isset($cameras))
-                                @foreach ($cameras as $camera)
-                                    <div class="single-info">
-                                        <span class="lable">Mode Autofokus : </span>
-                                        <span class="value">{{ $camera['mode_af'] }}</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Flash Internal : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Kecepatan Pemotretan : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Dimensi : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">ISO Efektif :</span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Kompensasi Pemaparan : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Mode Flash : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Resolusi Gambar : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Stabilizer Gambar : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Ukuran Monitor LCD : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Resolusi Monitor LCD : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Fokus Manual : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Mode Pemotretan : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Ukuran Sensor : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Rentang Kecepatan Rana :</span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Bobot : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                    <div class="single-info">
-                                        <span class="lable">Keseimbangan Putih : </span>
-                                        <span class="value">Ch-256xl</span>
-                                    </div>
-                                @endforeach
-                            @endif
+                            <div class="single-info">
+                                <span class="lable">Mode Autofokus : </span>
+                                <span class="value"></span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Flash Internal : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Kecepatan Pemotretan : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Dimensi : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">ISO Efektif :</span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Kompensasi Pemaparan : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Mode Flash : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Resolusi Gambar : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Stabilizer Gambar : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Ukuran Monitor LCD : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Resolusi Monitor LCD : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Fokus Manual : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Mode Pemotretan : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Ukuran Sensor : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Rentang Kecepatan Rana :</span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Bobot : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+                            <div class="single-info">
+                                <span class="lable">Keseimbangan Putih : </span>
+                                <span class="value">Ch-256xl</span>
+                            </div>
+
                             <br><br><br><br><br>
                         </div>
                     </div>

@@ -8,7 +8,11 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\CameraController' => $baseDir . '/app/Http/Controllers/CameraController.php',
+    'App\\Http\\Controllers\\CompareController' => $baseDir . '/app/Http/Controllers/CompareController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\FullkitController' => $baseDir . '/app/Http/Controllers/FullkitController.php',
+    'App\\Http\\Controllers\\LensaController' => $baseDir . '/app/Http/Controllers/LensaController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',

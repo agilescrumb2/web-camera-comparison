@@ -507,7 +507,11 @@ class ComposerStaticInit4efab92a464b101893d50c64de0ee203
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\CameraController' => __DIR__ . '/../..' . '/app/Http/Controllers/CameraController.php',
+        'App\\Http\\Controllers\\CompareController' => __DIR__ . '/../..' . '/app/Http/Controllers/CompareController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\FullkitController' => __DIR__ . '/../..' . '/app/Http/Controllers/FullkitController.php',
+        'App\\Http\\Controllers\\LensaController' => __DIR__ . '/../..' . '/app/Http/Controllers/LensaController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

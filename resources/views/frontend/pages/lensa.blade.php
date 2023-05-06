@@ -52,9 +52,7 @@
                                             </div>
                                         </div>
                                         <ul class="product-meta">
-                                            <li><a class="action" data-bs-toggle="modal" data-bs-target="#quickView"
-                                                    href="/detail"><i class="pe-7s-search"></i></a></li>
-                                            <li><a class="action" href="/detail"><i class="pe-7s-shopbag"></i></a></li>
+
                                             <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
@@ -71,9 +69,7 @@
                                     <a href="/detail"><img src="{{ asset($lensa['gambar']) }}" alt="product"></a>
 
                                     <ul class="product-meta">
-                                        <li><a class="action" data-bs-toggle="modal" data-bs-target="#quickView"
-                                                href="/detail"><i class="pe-7s-search"></i></a></li>
-                                        <li><a class="action" href="/detail"><i class="pe-7s-shopbag"></i></a></li>
+
                                         <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
                                     </ul>
                                 </div>
@@ -82,22 +78,15 @@
                                     <div class="price">
                                         <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
                                     </div>
-                                    {{-- <p>{{ $lensa['mode_af'] }} <br>{{ $lensa['built_in_flash'] }} <br>
-                                        {{ $lensa['kecepatan_pemotretan'] }} <br> {{ $lensa['dimensi'] }} </p> --}}
+                                    <p>Mode Autofokus : {{ $lensa['bobot'] }} </p>
+                                    <p>Flash Internal : {{ $lensa['diameter_panjang'] }} </p>
+                                    <p>Kecepatan Pemotretan : {{ $lensa['aperture_minimum'] }} </p>
+                                    <p>Dimensi : {{ $lensa['ukuran_filter'] }} </p>
                                 </div>
                             </div>
                         @endforeach
                     </div>
                 </div>
-            </div>
-            <div class="page-pagination">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link active" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
             </div>
         </div>
     </div>

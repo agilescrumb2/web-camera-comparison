@@ -22,7 +22,7 @@
                         <li>
                             <a href="/compare">Compare</a>
                         </li>
-                        <li><a href="/history">History</a></li>
+                        {{-- <li><a href="/history">History</a></li> --}}
                     </ul>
                 </div>
             </div>

@@ -30,17 +30,12 @@
                 <div class="shop-sort">
                     <span class="title">Sort By :</span>
                     <select class="nice_select" onchange="window.location.href=this.value">
-                        <option
-                            value="{{ route('cameras.index', ['sort' => null, 'min_price' => $request->input('min_price'), 'max_price' => $request->input('max_price')]) }}">
-                            Default</option>
-                        <option
-                            value="{{ route('cameras.index', ['sort' => 'low_to_high', 'min_price' => $request->input('min_price'), 'max_price' => $request->input('max_price')]) }}">
-                            Price: Low to High</option>
-                        <option
-                            value="{{ route('cameras.index', ['sort' => 'high_to_low', 'min_price' => $request->input('min_price'), 'max_price' => $request->input('max_price')]) }}">
-                            Price: High to Low</option>
+                        <option value="{{ route('cameras.index', ['sort' => null]) }}">Default</option>
+                        <option value="{{ route('cameras.index', ['sort' => 'low_to_high']) }}">Price: Low to High</option>
+                        <option value="{{ route('cameras.index', ['sort' => 'high_to_low']) }}">Price: High to Low</option>
                     </select>
                 </div>
+
 
             </div>
             <div class="tab-content">
@@ -58,8 +53,7 @@
                                             </div>
                                         </div>
                                         <ul class="product-meta">
-                                            <li><a class="action" data-bs-toggle="modal" data-bs-target="#quickView"
-                                                    href="/detail"><i class="pe-7s-search"></i></a></li>
+
                                             <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
@@ -76,9 +70,7 @@
                                     <a href="/detail"><img src="{{ asset($camera['gambar']) }}" alt="product"></a>
 
                                     <ul class="product-meta">
-                                        <li><a class="action" data-bs-toggle="modal" data-bs-target="#quickView"
-                                                href=""><i class="pe-7s-search"></i></a></li>
-                                        <li><a class="action" href="/detail"><i class="pe-7s-shopbag"></i></a></li>
+
                                         <li><a class="action" href="{{ route('cameras.show', $camera['id']) }}"><i
                                                     class="pe-7s-like"></i></a></li>
                                     </ul>
@@ -98,11 +90,6 @@
                         @endforeach
                     </div>
                 </div>
-            </div>
-            <div class="page-pagination">
-                <ul class="pagination justify-content-center">
-                    {{ $paginatedCameras->links() }}
-                </ul>
             </div>
 
         </div>

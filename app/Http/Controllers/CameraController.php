@@ -34,21 +34,20 @@ class CameraController extends Controller
             $perPage,
             $currentPage
         );
-
+  // dd($camera);
         return view('frontend.pages.kamera', compact('cameras', 'paginatedCameras', 'totalProducts', 'request'));
     }
     public function show($id)
     {
-        $response = Http::get("https://cameris.my.id/api/kamera/$id");
+        $response = Http::get("https://cameris.my.id/api/camera?id=$id");
 
         $cameras = $response->json();
-
         return view('frontend.pages.detail', compact('cameras'));
     }
 
     public function search(Request $request)
     {
-        $response = Http::get('https://cameris.my.id/api/kamera', [
+        $response = Http::get('https://cameris.my.id/api/camera', [
             'search' => $request->input('search')
         ]);
 

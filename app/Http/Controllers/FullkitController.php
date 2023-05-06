@@ -22,13 +22,5 @@ class FullkitController extends Controller
         return view('frontend.pages.detail_fulset', compact('fullkits'));
     }
 
-    public function search(Request $request)
-    {
-        $response = Http::get('https://cameris.my.id/api/fulkit', [
-            'q' => $request->q
-        ]);
 
-        $fullkits = $response->json();
-        return view('frontend.pages.fullset', compact('fullkits'));
-    }
 }
