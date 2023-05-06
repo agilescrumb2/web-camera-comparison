@@ -74,6 +74,32 @@
         <script src="{{ asset('assets2/js/plugins/jquery.zoom.min.js') }}"></script>
         <script src="{{ asset('assets2/js/main.js') }}"></script>
         @yield('script')
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.compare-remove-form').on('submit', function(e) {
+                    e.preventDefault();
+
+                    var form = $(this);
+                    var url = form.attr('action');
+                    var csrfToken = form.find('input[name="_token"]').val();
+
+                    $.ajax({
+                        url: url,
+                        type: 'POST',
+                        data: {
+                            _token: csrfToken
+                        },
+                        success: function(response) {
+                            // Tindakan setelah penghapusan berhasil dilakukan
+                        },
+                        error: function(xhr) {
+                            // Tindakan jika terjadi kesalahan saat penghapusan
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 
     </html>
