@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\CameraController;
+use App\Http\Controllers\CompareController;
 use App\Http\Controllers\LensaController;
 use App\Http\Controllers\FullkitController;
 
@@ -20,13 +21,22 @@ Route::get('/', function () {
     return view('frontend.pages.index');
 });
 
-Route::get('/compare', function () {
-    return view('frontend.pages.compare');
+Route::get('/compare_kamera', function () {
+    return view('frontend.pages.compare_kamera');
 });
 Route::get('/detail', function () {
     return view('frontend.pages.detail');
 });
 
+
+Route::get('/compare/add/{id}', [CompareController::class, 'add'])
+    ->name('compare.add');
+
+Route::get('/compare', [CompareController::class, 'compare'])
+    ->name('compare');
+
+Route::get('/compare/clear', [CompareController::class, 'clear'])
+    ->name('compare.clear');
 
 // Kamera
 Route::post('/kamera/search', [CameraController::class, 'search'])->name('cameras.search');
@@ -44,7 +54,8 @@ Route::get('/fullkit', [FullkitController::class, 'index'])->name('fullkits.inde
 Route::get('/fullkit/{id}', [FullkitController::class, 'show'])->name('fullkits.show');
 
 // Compare
-Route::get('/compare', [CompareController::class, 'index'])->name('compare.index');
-Route::post('/compare/add', [CompareController::class, 'add'])->name('compare.add');
-Route::post('/compare/remove', [CompareController::class, 'remove'])->name('compare.remove');
-Route::get('/compare/advantages', [CompareController::class, 'advantages'])->name('compare.advantages');
+// Rute untuk menambahkan produk ke perbandingan (compare)
+Route::post('/compare/add/{productId}', [CameraController::class, 'addToCompare'])->name('compare.add');
+// Route::get('/compare', [CompareController::class, 'showComparePage'])->name('compare');
+// Route::post('/cart/add/{productId}', [CompareController::class, 'addToCart'])->name('cart.add');
+// Route::delete('/cart/remove/{productId}', [CompareController::class, 'removeFromCart'])->name('cart.remove');

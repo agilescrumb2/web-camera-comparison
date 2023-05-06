@@ -45,7 +45,7 @@
                         <h4 class="product-name">{{ $lensa['nama_lensa'] }}</h4>
 
                         <div class="price">
-                            <span class="sale-price">{{ $lensa['harga'] }}</span>
+                            <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">

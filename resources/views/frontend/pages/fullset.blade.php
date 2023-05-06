@@ -51,7 +51,7 @@
                                                     href="{{ route('fullkits.show', $fullkit['id']) }}">{{ $fullkit['nama_fulkit'] }}</a>
                                             </h4>
                                             <div class="price">
-                                                <span class="sale-price">{{ $fullkit['harga'] }}</span>
+                                                <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">

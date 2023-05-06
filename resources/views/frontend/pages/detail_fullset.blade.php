@@ -45,7 +45,7 @@
                         <h4 class="product-name">{{ $fullkit['nama_fulkit'] }}</h4>
 
                         <div class="price">
-                            <span class="sale-price">{{ $fullkit['harga'] }}</span>
+                            <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">

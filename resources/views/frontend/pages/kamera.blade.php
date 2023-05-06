@@ -55,12 +55,12 @@
                                                     href="{{ route('cameras.show', $camera['id']) }}">{{ $camera['nama_kamera'] }}</a>
                                             </h4>
                                             <div class="price">
-                                                <span class="sale-price">{{ $camera['harga'] }}</span>
+                                                <span class="sale-price">IDR {{ $camera['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
 
-                                            <li><a class="action" href="{{ route('cameras.show', $camera['id']) }}"><i
+                                            <li><a class="action" href="{{ route('compare.add', $camera['id']) }}"><i
                                                         class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
@@ -79,7 +79,7 @@
 
                                     <ul class="product-meta">
 
-                                        <li><a class="action" href="{{ route('cameras.show', $camera['id']) }}"><i
+                                        <li><a class="action" href="{{ route('compare.add', $camera['id']) }}"><i
                                                     class="pe-7s-like"></i></a></li>
                                     </ul>
                                 </div>

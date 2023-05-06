@@ -55,19 +55,18 @@
         <nav>
             <ul class="nav-menu">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="about.html">Kamera</a></li>
+                <li><a href="/kamera">Kamera</a></li>
                 <li>
-                    <a href="#">Lensa</a>
-                </li>
-                <li>
-                    <a href="#">Fullkit </a>
+                    <a href="/lensa">Lensa</a>
                 </li>
                 <li>
-                    <a href="#">Compare</a>
+                    <a href="/fullkit">Fullkit </a>
                 </li>
-                <li><a href="contact.html">History</a></li>
+                <li>
+                    <a href="/compare">Compare</a>
+                </li>
             </ul>
         </nav>
     </div>
