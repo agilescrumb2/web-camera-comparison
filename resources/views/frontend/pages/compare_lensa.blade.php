@@ -44,6 +44,7 @@
                                                     </a>
                                                     <div class="product-prices">
                                                         <span class="sale-price">
+                                                            IDR
                                                             {{ isset($lensa[$id]['harga']) ? $lensa[$id]['harga'] : '' }}
                                                         </span>
                                                     </div>

@@ -44,6 +44,7 @@
                                                     </a>
                                                     <div class="product-prices">
                                                         <span class="sale-price">
+                                                            IDR
                                                             {{ isset($fullkit[$id]['harga']) ? $fullkit[$id]['harga'] : '' }}
                                                         </span>
                                                     </div>

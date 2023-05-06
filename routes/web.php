@@ -22,7 +22,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.pages.index');
 });
-
+Route::get('/compare', function () {
+    return view('frontend.pages.compare');
+});
 Route::get('/compare_kamera', function () {
     return view('frontend.pages.compare_kamera');
 });
@@ -32,16 +34,11 @@ Route::get('/compare_lensa', function () {
 Route::get('/compare_fullkit', function () {
     return view('frontend.pages.compare_fullkit');
 });
-Route::get('/detail', function () {
-    return view('frontend.pages.detail');
-});
-Route::get('/landingpage', function () {
-    return view('landingpage');
-});
-Route::get('/compare', [CompareController::class, 'compare'])->name('compare');
-Route::get('/compare/add/{id}', [CompareController::class, 'add'])->name('compare.add');
-Route::get('/compare/remove/{id}', [CompareController::class, 'remove'])->name('compare.remove');
-Route::get('/compare/clear', [CompareController::class, 'clear'])->name('compare.clear');
+
+Route::get('/compareKamera', [CompareController::class, 'compare'])->name('compare');
+Route::get('/compareKamera/add/{id}', [CompareController::class, 'add'])->name('compare.add');
+Route::get('/compareKamera/remove/{id}', [CompareController::class, 'remove'])->name('compare.remove');
+Route::get('/compareKamera/clear', [CompareController::class, 'clear'])->name('compare.clear');
     Route::get('/compareLens', [CompareFullkitController::class, 'compareLens'])->name('compareFullkit');
     Route::get('/comparefullkit/addFullkit/{id}', [CompareFullkitController::class, 'addFullkit'])->name('compareFullkit.add');
     Route::get('/comparefullkit/removeFullkit/{id}', [CompareFullkitController::class, 'removeFullkit'])->name('compareFullkit.remove');
@@ -50,6 +47,7 @@ Route::get('/compare/clear', [CompareController::class, 'clear'])->name('compare
     Route::get('/comparelensa/addLens/{id}', [CompareLensaController::class, 'addLens'])->name('compareLens.add');
     Route::get('/comparelensa/removeLens/{id}', [CompareLensaController::class, 'removeLens'])->name('compareLens.remove');
     Route::get('/comparelensa/clearLens', [CompareLensaController::class, 'clearLens'])->name('compareLens.clear');
+
 // Kamera
 Route::post('/kamera/search', [CameraController::class, 'search'])->name('cameras.search');
 Route::get('/kamera', [CameraController::class, 'index'])->name('cameras.index');

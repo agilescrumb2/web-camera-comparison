@@ -14,11 +14,11 @@ class CompareFullkitController extends Controller
             $fullkit = $response->json()['data'];
 
             $fullkits = $request->session()->get('compareFullkit', []);
-            $fulkits[$id] = $fullkit;
+            $fullkits[$id] = $fullkit;
 
             $request->session()->put('compareFullkit', $fullkits);
 
-            return view('frontend.pages.compare_fullkit', compact('fulkits'))->with('success', 'Fullkit added to compare list.');
+            return view('frontend.pages.compare_fullkit', compact('fullkits'))->with('success', 'Fullkit added to compare list.');
         }
 
         return redirect()->back()->with('error', 'Failed to add fullkit to compare list.');
