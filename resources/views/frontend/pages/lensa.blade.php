@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('title')
-    Cameris
+    Lensa
 @endsection
 @section('content')
     <div class="section page-banner-section" style="background-image: url(images/img.jpg);">

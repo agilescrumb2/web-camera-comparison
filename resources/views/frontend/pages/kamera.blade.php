@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('title')
-    Cameris
+    Kamera
 @endsection
 @section('content')
     <div class="section page-banner-section" style="background-image: url(images/img.jpg);">
@@ -28,11 +28,14 @@
                     </ul>
                 </div>
                 <div class="shop-sort">
-                    <span class="title">Sort By :</span>
-                    <select class="nice_select" onchange="window.location.href=this.value">
-                        <option value="{{ route('cameras.index', ['sort' => null]) }}">Default</option>
-                        <option value="{{ route('cameras.index', ['sort' => 'low_to_high']) }}">Price: Low to High</option>
-                        <option value="{{ route('cameras.index', ['sort' => 'high_to_low']) }}">Price: High to Low</option>
+                    <span class="title">Sort By:</span>
+                    <select class="nice_select" onchange="window.location.replace(this.value)">
+                        <option value="{{ route('cameras.index', ['sort' => null]) }}"
+                            {{ $request->sort === null ? 'selected' : '' }}>Default</option>
+                        <option value="{{ route('cameras.index', ['sort' => 'low_to_high']) }}"
+                            {{ $request->sort === 'low_to_high' ? 'selected' : '' }}>Price: Low to High</option>
+                        <option value="{{ route('cameras.index', ['sort' => 'high_to_low']) }}"
+                            {{ $request->sort === 'high_to_low' ? 'selected' : '' }}>Price: High to Low</option>
                     </select>
                 </div>
 
