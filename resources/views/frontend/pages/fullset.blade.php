@@ -18,7 +18,7 @@
         <div class="container">
             <div class="shop-top-bar">
                 <div class="shop-text">
-                    <p><span>12</span> Product Found of <span>30</span></p>
+                    {{-- <p><span>12</span> Product Found of <span>30</span></p> --}}
                 </div>
                 <div class="shop-tabs">
                     <ul class="nav">
@@ -44,16 +44,20 @@
                             @foreach ($fullkits['data'] as $fullkit)
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-product">
-                                        <a href="/detail"><img src="{{ asset($fullkit['gambar']) }}" alt="product"></a>
+                                        <a href="{{ route('fullkits.show', $fullkit['id']) }}"><img
+                                                src="{{ asset($fullkit['gambar']) }}" alt="product"></a>
                                         <div class="product-content">
-                                            <h4 class="title"><a href="/detail">{{ $fullkit['nama_fulkit'] }}</a></h4>
+                                            <h4 class="title"><a
+                                                    href="{{ route('fullkits.show', $fullkit['id']) }}">{{ $fullkit['nama_fulkit'] }}</a>
+                                            </h4>
                                             <div class="price">
                                                 <span class="sale-price">{{ $fullkit['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
 
-                                            <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
+                                            <li><a class="action" href="{{ route('fullkits.show', $fullkit['id']) }}"><i
+                                                        class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -66,22 +70,26 @@
                         @foreach ($fullkits['data'] as $fullkit)
                             <div class="single-product-02 product-list">
                                 <div class="product-images">
-                                    <a href="/detail"><img src="{{ asset($fullkit['gambar']) }}" alt="product"></a>
+                                    <a href="{{ route('fullkits.show', $fullkit['id']) }}"><img
+                                            src="{{ asset($fullkit['gambar']) }}" alt="product"></a>
 
                                     <ul class="product-meta">
 
-                                        <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
+                                        <li><a class="action" href="{{ route('fullkits.show', $fullkit['id']) }}"><i
+                                                    class="pe-7s-like"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h4 class="title"><a href="/detail">{{ $fullkit['nama_fulkit'] }}</a></h4>
+                                    <h4 class="title"><a
+                                            href="{{ route('fullkits.show', $fullkit['id']) }}">{{ $fullkit['nama_fulkit'] }}</a>
+                                    </h4>
                                     <div class="price">
                                         <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
                                     </div>
                                     <p>Mode Autofokus : {{ $fullkit['mode_af'] }} </p>
                                     <p>Flash Internal : {{ $fullkit['built_in_flash'] }} </p>
-                                    <p>Kecepatan Pemotretan : {{ $fullkit['jarak_fokus_terdekat'] }} </p>
-                                    <p>Dimensi : {{ $fullkit['kecepatan_pemotretan'] }} </p>
+                                    <p>Jarak Fokus Terdekat : {{ $fullkit['jarak_fokus_terdekat'] }} </p>
+                                    <p>Kecepatan Pemotretan : {{ $fullkit['kecepatan_pemotretan'] }} </p>
                                 </div>
                             </div>
                         @endforeach

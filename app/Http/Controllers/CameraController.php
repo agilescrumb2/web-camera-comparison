@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Collection;
 
 class CameraController extends Controller
 {
@@ -21,6 +20,8 @@ class CameraController extends Controller
                     $cameras = $cameras->sortByDesc('harga');
                     break;
             }
+        } else {
+            $cameras = $cameras->sortBy('harga');
         }
 
 
@@ -29,10 +30,20 @@ class CameraController extends Controller
 
     public function show($id)
     {
-        $response = Http::get("https://cameris.my.id/api/camera?id=$id");
+        $response = Http::get("https://cameris.my.id/api/camera?id={$id}");
 
-        $cameras = $response->json();
-        return view('frontend.pages.detail', compact('cameras'));
+        if ($response->ok()) {
+            $cameras = $response->json()['data'];
+            $camera = collect($cameras)->firstWhere('id', $id);
+
+            if ($camera) {
+                return view('frontend.pages.detail', compact('camera'));
+            } else {
+                abort(404, 'Kamera tidak ditemukan.');
+            }
+        } else {
+            abort(404, 'Kamera tidak ditemukan.');
+        }
     }
 
 }

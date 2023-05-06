@@ -48,16 +48,20 @@
                             @foreach ($cameras['data'] as $camera)
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-product">
-                                        <a href="/detail"><img src="{{ asset($camera['gambar']) }}" alt="product"></a>
+                                        <a href="{{ route('cameras.show', $camera['id']) }}"><img
+                                                src="{{ asset($camera['gambar']) }}" alt="product"></a>
                                         <div class="product-content">
-                                            <h4 class="title"><a href="/detail">{{ $camera['nama_kamera'] }}</a></h4>
+                                            <h4 class="title"><a
+                                                    href="{{ route('cameras.show', $camera['id']) }}">{{ $camera['nama_kamera'] }}</a>
+                                            </h4>
                                             <div class="price">
                                                 <span class="sale-price">{{ $camera['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
 
-                                            <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
+                                            <li><a class="action" href="{{ route('cameras.show', $camera['id']) }}"><i
+                                                        class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -70,7 +74,8 @@
                         @foreach ($cameras['data'] as $camera)
                             <div class="single-product-02 product-list">
                                 <div class="product-images">
-                                    <a href="/detail"><img src="{{ asset($camera['gambar']) }}" alt="product"></a>
+                                    <a href="{{ route('cameras.show', $camera['id']) }}"><img
+                                            src="{{ asset($camera['gambar']) }}" alt="product"></a>
 
                                     <ul class="product-meta">
 
@@ -79,7 +84,9 @@
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h4 class="title"><a href="/detail">{{ $camera['nama_kamera'] }}</a></h4>
+                                    <h4 class="title"><a
+                                            href="{{ route('cameras.show', $camera['id']) }}">{{ $camera['nama_kamera'] }}</a>
+                                    </h4>
                                     <div class="price">
                                         <span class="sale-price">IDR {{ $camera['harga'] }}</span>
 

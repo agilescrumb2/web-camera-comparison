@@ -6,22 +6,44 @@ use Illuminate\Http\Request;
 
 class LensaController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-
-            $response = Http::get('https://cameris.my.id/api/lensa');
-
-            $lensas = $response->json();
-            // dd($lensas);
-            return view('frontend.pages.lensa', compact('lensas'));
+        $response = Http::get('https://cameris.my.id/api/lensa');
+        $lensas = collect($response->json());
+        $sort = $request->input('sort');
+        if ($sort) {
+            switch ($sort) {
+                case 'low_to_high':
+                    $lensas = $lensas->sortBy('harga');
+                    break;
+                case 'high_to_low':
+                    $lensas = $lensas->sortByDesc('harga');
+                    break;
+            }
+        } else {
+            $lensas = $lensas->sortBy('harga');
         }
 
-        public function show($id)
-        {
-            $response = Http::get('https://cameris.my.id/api/lensa/' . $id);
 
-            $lensas = $response->json();
-            return view('frontend.pages.detail_lensa', compact('lensas'));
+        return view('frontend.pages.lensa', compact('lensas', 'request'));
+    }
+
+    public function show($id)
+    {
+        $response = Http::get("https://cameris.my.id/api/lensa?id={$id}");
+
+        if ($response->ok()) {
+            $lensas = $response->json()['data'];
+            $lensa = collect($lensas)->firstWhere('id', $id);
+
+            if ($lensa) {
+                return view('frontend.pages.detail_lensa', compact('lensa'));
+            } else {
+                abort(404, 'lensa tidak ditemukan.');
+            }
+        } else {
+            abort(404, 'lensa tidak ditemukan.');
         }
+    }
 
 }

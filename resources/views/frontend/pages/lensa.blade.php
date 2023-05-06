@@ -18,7 +18,7 @@
         <div class="container">
             <div class="shop-top-bar">
                 <div class="shop-text">
-                    <p><span>12</span> Product Found of <span>30</span></p>
+                    {{-- <p><span>12</span> Product Found of <span>30</span></p> --}}
                 </div>
                 <div class="shop-tabs">
                     <ul class="nav">
@@ -44,16 +44,20 @@
                             @foreach ($lensas['data'] as $lensa)
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-product">
-                                        <a href="/detail"><img src="{{ asset($lensa['gambar']) }}" alt="product"></a>
+                                        <a href="{{ route('lensas.show', $lensa['id']) }}"><img
+                                                src="{{ asset($lensa['gambar']) }}" alt="product"></a>
                                         <div class="product-content">
-                                            <h4 class="title"><a href="/detail">{{ $lensa['nama_lensa'] }}</a></h4>
+                                            <h4 class="title"><a
+                                                    href="{{ route('lensas.show', $lensa['id']) }}">{{ $lensa['nama_lensa'] }}</a>
+                                            </h4>
                                             <div class="price">
                                                 <span class="sale-price">{{ $lensa['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
 
-                                            <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
+                                            <li><a class="action" href="{{ route('lensas.show', $lensa['id']) }}"><i
+                                                        class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -66,22 +70,26 @@
                         @foreach ($lensas['data'] as $lensa)
                             <div class="single-product-02 product-list">
                                 <div class="product-images">
-                                    <a href="/detail"><img src="{{ asset($lensa['gambar']) }}" alt="product"></a>
+                                    <a href="{{ route('lensas.show', $lensa['id']) }}"><img
+                                            src="{{ asset($lensa['gambar']) }}" alt="product"></a>
 
                                     <ul class="product-meta">
 
-                                        <li><a class="action" href="/detail"><i class="pe-7s-like"></i></a></li>
+                                        <li><a class="action" href="{{ route('lensas.show', $lensa['id']) }}"><i
+                                                    class="pe-7s-like"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <h4 class="title"><a href="/detail">{{ $lensa['nama_lensa'] }}</a></h4>
+                                    <h4 class="title"><a
+                                            href="{{ route('lensas.show', $lensa['id']) }}">{{ $lensa['nama_lensa'] }}</a>
+                                    </h4>
                                     <div class="price">
                                         <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
                                     </div>
-                                    <p>Mode Autofokus : {{ $lensa['bobot'] }} </p>
-                                    <p>Flash Internal : {{ $lensa['diameter_panjang'] }} </p>
-                                    <p>Kecepatan Pemotretan : {{ $lensa['aperture_minimum'] }} </p>
-                                    <p>Dimensi : {{ $lensa['ukuran_filter'] }} </p>
+                                    <p>Bobot : {{ $lensa['bobot'] }} </p>
+                                    <p>Diameter Panjang : {{ $lensa['diameter_panjang'] }} </p>
+                                    <p>Aperture Minimum : {{ $lensa['aperture_minimum'] }} </p>
+                                    <p>Ukuran Filter : {{ $lensa['ukuran_filter'] }} </p>
                                 </div>
                             </div>
                         @endforeach
