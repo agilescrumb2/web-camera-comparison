@@ -8,7 +8,7 @@
             <div class="page-banner-content">
                 <h2 class="title">Fullkit Details</h2>
                 <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li class="active">Fullkit Details</li>
                 </ul>
             </div>
@@ -49,7 +49,8 @@
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
-                                <a class="action" href="#"><i class="pe-7s-like"></i></a>
+                                <a class="action" href="{{ route('compareFullkit.add', $fullkit['id']) }}"><i
+                                        class="pe-7s-like"></i></a>
                             </div>
                         </div>
                         <div class="product-info">
@@ -63,7 +64,7 @@
                                 <span class="value">{{ $fullkit['built_in_flash'] }}</span>
                             </div>
                             <div class="single-info">
-                                <span class="lable">Jarak Fokus Terdeka : </span>
+                                <span class="lable">Jarak Fokus Terdekat : </span>
                                 <span class="value">{{ $fullkit['jarak_fokus_terdekat'] }}</span>
                             </div>
                             <div class="single-info">

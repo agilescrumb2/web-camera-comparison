@@ -3,7 +3,7 @@
     Kamera
 @endsection
 @section('content')
-    <div class="section page-banner-section" style="background-image: url(images/img.jpg);">
+    <div class="section page-banner-section" style="background-image: url({{ asset('images/img.jpg') }});">
         <div class="container">
             <div class="page-banner-content">
                 <h2 class="title">Daftar Kamera</h2>
@@ -27,7 +27,7 @@
                                     class="fa fa-list"></i></button></li>
                     </ul>
                 </div>
-                <div class="shop-sort">
+                {{-- <div class="shop-sort">
                     <span class="title">Sort By:</span>
                     <select class="nice_select" onchange="window.location.replace(this.value)">
                         <option value="{{ route('cameras.index', ['sort' => null]) }}"
@@ -37,7 +37,7 @@
                         <option value="{{ route('cameras.index', ['sort' => 'high_to_low']) }}"
                             {{ $request->sort === 'high_to_low' ? 'selected' : '' }}>Price: High to Low</option>
                     </select>
-                </div>
+                </div> --}}
 
 
             </div>

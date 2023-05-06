@@ -8,7 +8,7 @@
             <div class="page-banner-content">
                 <h2 class="title">Lensa Details</h2>
                 <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li class="active">Lensa Details</li>
                 </ul>
             </div>
@@ -49,7 +49,8 @@
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
-                                <a class="action" href="#"><i class="pe-7s-like"></i></a>
+                                <a class="action" href="{{ route('compareLens.add', $lensa['id']) }}"><i
+                                        class="pe-7s-like"></i></a>
                             </div>
                         </div>
                         <div class="product-info">

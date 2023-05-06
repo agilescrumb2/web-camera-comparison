@@ -3,7 +3,7 @@
     Fullkit
 @endsection
 @section('content')
-    <div class="section page-banner-section" style="background-image: url(images/img.jpg);">
+    <div class="section page-banner-section" style="background-image: url({{ asset('images/img.jpg') }});">
         <div class="container">
             <div class="page-banner-content">
                 <h2 class="title">Daftar Fullkit</h2>
@@ -27,7 +27,7 @@
                                     class="fa fa-list"></i></button></li>
                     </ul>
                 </div>
-                <div class="shop-sort">
+                {{-- <div class="shop-sort">
                     <span class="title">Sort By :</span>
                     <select class="nice_select">
                         <option value="1">Default</option>
@@ -35,7 +35,7 @@
                         <option value="3">Default</option>
                         <option value="4">Default</option>
                     </select>
-                </div>
+                </div> --}}
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade" id="grid">
@@ -56,7 +56,8 @@
                                         </div>
                                         <ul class="product-meta">
 
-                                            <li><a class="action" href="{{ route('fullkits.show', $fullkit['id']) }}"><i
+                                            <li><a class="action"
+                                                    href="{{ route('compareFullkit.add', $fullkit['id']) }}"><i
                                                         class="pe-7s-like"></i></a></li>
                                         </ul>
                                     </div>
@@ -75,7 +76,7 @@
 
                                     <ul class="product-meta">
 
-                                        <li><a class="action" href="{{ route('fullkits.show', $fullkit['id']) }}"><i
+                                        <li><a class="action" href="{{ route('compareFullkit.add', $fullkit['id']) }}"><i
                                                     class="pe-7s-like"></i></a></li>
                                     </ul>
                                 </div>

@@ -18,7 +18,7 @@ class CompareController extends Controller
 
             $request->session()->put('compare', $cameras);
 
-            return redirect()->route('compare.add', $id)->with('success', 'Camera added to compare list.');
+            return view('frontend.pages.compare_kamera', compact('cameras'))->with('success', 'Camera added to compare list.');
         }
 
         return redirect()->back()->with('error', 'Failed to add camera to compare list.');
@@ -28,11 +28,14 @@ class CompareController extends Controller
     {
         $cameras = $request->session()->get('compare', []);
 
-        unset($cameras[$id]);
+        if (isset($cameras[$id])) {
+            unset($cameras[$id]);
+            $request->session()->put('compare', $cameras);
 
-        $request->session()->put('compare', $cameras);
+            return view('frontend.pages.compare_kamera', compact('cameras'))->with('success', 'Camera removed from compare list.');
+        }
 
-        return redirect()->route('compare')->with('success', 'Camera removed from compare list.');
+        return redirect()->back()->with('error', 'Camera not found in compare list.');
     }
 
     public function compare(Request $request)
