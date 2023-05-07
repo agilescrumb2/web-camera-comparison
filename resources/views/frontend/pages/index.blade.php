@@ -12,10 +12,8 @@
                             <div class="slider-content">
                                 <p>Give u New Information</p>
                                 <h2 class="title">Camera <br> Comparison <br> Information</h2>
-
-                                <a href="/kamera" class="btn btn-primary btn-hover-dark">Start</a>
+                                <a href="/compare" class="btn btn-primary btn-hover-dark">Start</a>
                             </div>
-
                             <div class="slider-images"> <br><br><br>
                                 <img src="{{ asset('images/camcam.png') }}" alt="Slider">
                             </div>

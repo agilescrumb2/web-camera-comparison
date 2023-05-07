@@ -39,11 +39,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6">
                     <div class="product-details-description">
                         <h4 class="product-name">{{ $lensa['nama_lensa'] }}</h4>
-
                         <div class="price">
                             <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
                         </div>
@@ -54,7 +52,6 @@
                             </div>
                         </div>
                         <div class="product-info">
-
                             <div class="single-info">
                                 <span class="lable">Bobot : </span>
                                 <span class="value">{{ $lensa['bobot'] }}</span>
@@ -83,7 +80,6 @@
                                 <span class="lable">Jumlah Bilah Diafragma : </span>
                                 <span class="value">{{ $lensa['jumlah_bilah_diafragma'] }}</span>
                             </div>
-
                             <br><br><br><br><br>
                         </div>
                     </div>

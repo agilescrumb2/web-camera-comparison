@@ -33,7 +33,6 @@
                                         <div class="compare-product ">
                                             <div class="pack-product-container">
                                                 <div class="thumb-mask">
-
                                                     <a href="product-details.html">
                                                         <img src=" {{ isset($fullkit[$id]['gambar']) ? $fullkit[$id]['gambar'] : '' }}"
                                                             alt="Product">
@@ -189,7 +188,6 @@
                                     </td>
                                 @endforeach
                             </tr>
-
                         </tbody>
                     </table>
                 </div>

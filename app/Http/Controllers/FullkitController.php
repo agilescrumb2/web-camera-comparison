@@ -10,32 +10,28 @@ class FullkitController extends Controller
     {
         $response = Http::get('https://cameris.my.id/api/fulkit');
         $fullkits = collect($response->json());
-        $sort = $request->input('sort');
-        if ($sort) {
-            switch ($sort) {
-                case 'low_to_high':
-                    $fullkits = $fullkits->sortBy('harga');
-                    break;
-                case 'high_to_low':
-                    $fullkits = $fullkits->sortByDesc('harga');
-                    break;
-            }
-        } else {
-            $fullkits = $fullkits->sortBy('harga');
-        }
-
-
+        // $sort = $request->input('sort');
+        // if ($sort) {
+        //     switch ($sort) {
+        //         case 'low_to_high':
+        //             $fullkits = $fullkits->sortBy('harga');
+        //             break;
+        //         case 'high_to_low':
+        //             $fullkits = $fullkits->sortByDesc('harga');
+        //             break;
+        //     }
+        // } else {
+        //     $fullkits = $fullkits->sortBy('harga');
+        // }
         return view('frontend.pages.fullset', compact('fullkits', 'request'));
     }
 
     public function show($id)
     {
         $response = Http::get("https://cameris.my.id/api/fulkit?id={$id}");
-
         if ($response->ok()) {
             $fullkits = $response->json()['data'];
             $fullkit = collect($fullkits)->firstWhere('id', $id);
-
             if ($fullkit) {
                 return view('frontend.pages.detail_fullset', compact('fullkit'));
             } else {
@@ -45,5 +41,4 @@ class FullkitController extends Controller
             abort(404, 'Fullkit tidak ditemukan.');
         }
     }
-
 }

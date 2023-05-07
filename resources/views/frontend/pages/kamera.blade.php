@@ -38,8 +38,6 @@
                             {{ $request->sort === 'high_to_low' ? 'selected' : '' }}>Price: High to Low</option>
                     </select>
                 </div> --}}
-
-
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade" id="grid">
@@ -59,7 +57,6 @@
                                             </div>
                                         </div>
                                         <ul class="product-meta">
-
                                             <li><a class="action" href="{{ route('compare.add', $camera['id']) }}"><i
                                                         class="pe-7s-like"></i></a></li>
                                         </ul>
@@ -76,9 +73,7 @@
                                 <div class="product-images">
                                     <a href="{{ route('cameras.show', $camera['id']) }}"><img
                                             src="{{ asset($camera['gambar']) }}" alt="product"></a>
-
                                     <ul class="product-meta">
-
                                         <li><a class="action" href="{{ route('compare.add', $camera['id']) }}"><i
                                                     class="pe-7s-like"></i></a></li>
                                     </ul>
@@ -89,7 +84,6 @@
                                     </h4>
                                     <div class="price">
                                         <span class="sale-price">IDR {{ $camera['harga'] }}</span>
-
                                     </div>
                                     <p>Mode Autofokus : {{ $camera['mode_af'] }} </p>
                                     <p>Flash Internal : {{ $camera['built_in_flash'] }} </p>
@@ -101,7 +95,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 @endsection

@@ -31,7 +31,7 @@ class CompareFullkitController extends Controller
         if (isset($fullkits[$id])) {
             unset($fullkits[$id]);
             $request->session()->put('compareFullkit', $fullkits);
-            return redirect()->route('compareFullkit')->with('success', 'Fullkit removed from compare list.');
+            return view('frontend.pages.compare_fullkit', compact('fullkits'))->with('success', 'Fullkit removed from compare list.');
         }
 
         return redirect()->back()->with('error', 'Fullkit not found in compare list.');

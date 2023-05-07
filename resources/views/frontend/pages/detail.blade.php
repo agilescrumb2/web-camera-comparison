@@ -39,11 +39,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6">
                     <div class="product-details-description">
                         <h4 class="product-name">{{ $camera['nama_kamera'] }}</h4>
-
                         <div class="price">
                             <span class="sale-price">IDR {{ $camera['harga'] }}</span>
                         </div>
@@ -54,7 +52,6 @@
                             </div>
                         </div>
                         <div class="product-info">
-
                             <div class="single-info">
                                 <span class="lable">Mode Autofokus : </span>
                                 <span class="value">{{ $camera['mode_af'] }}</span>
@@ -123,7 +120,6 @@
                                 <span class="lable">Keseimbangan Putih : </span>
                                 <span class="value">{{ $camera['white_balance'] }}</span>
                             </div>
-
                             <br><br><br><br><br>
                         </div>
                     </div>

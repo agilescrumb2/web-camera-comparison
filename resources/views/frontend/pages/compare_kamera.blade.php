@@ -33,7 +33,6 @@
                                         <div class="compare-product ">
                                             <div class="pack-product-container">
                                                 <div class="thumb-mask">
-
                                                     <a href="product-details.html">
                                                         <img src=" {{ isset($camera[$id]['gambar']) ? $camera[$id]['gambar'] : '' }}"
                                                             alt="Product">
@@ -62,7 +61,6 @@
                                 @foreach ($cameras as $id => $camera)
                                     <td>{{ isset($camera[$id]['mode_af']) ? $camera[$id]['mode_af'] : '' }}</td>
                                 @endforeach
-
                             </tr>
                             <tr>
                                 <th>Flash Internal : </th>
@@ -171,7 +169,6 @@
                                     </td>
                                 @endforeach
                             </tr>
-
                         </tbody>
                     </table>
                 </div>

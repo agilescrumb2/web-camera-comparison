@@ -39,11 +39,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6">
                     <div class="product-details-description">
                         <h4 class="product-name">{{ $fullkit['nama_fulkit'] }}</h4>
-
                         <div class="price">
                             <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
                         </div>
@@ -54,7 +52,6 @@
                             </div>
                         </div>
                         <div class="product-info">
-
                             <div class="single-info">
                                 <span class="lable">Mode Autofokus : </span>
                                 <span class="value">{{ $fullkit['mode_af'] }}</span>
@@ -131,7 +128,6 @@
                                 <span class="lable">White Balance : </span>
                                 <span class="value">{{ $fullkit['white_balance'] }}</span>
                             </div>
-
                             <br><br><br><br><br>
                         </div>
                     </div>

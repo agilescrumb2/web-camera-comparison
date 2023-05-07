@@ -57,7 +57,6 @@
 <body>
     @include('frontend.partials.header')
     @yield('content')
-
     @include('frontend.partials.footer')
     @section('js')
         <script src="{{ asset('assets2/js/vendor/modernizr-3.11.2.min.js') }}"></script>
@@ -83,7 +82,6 @@
                     var form = $(this);
                     var url = form.attr('action');
                     var csrfToken = form.find('input[name="_token"]').val();
-
                     $.ajax({
                         url: url,
                         type: 'POST',

@@ -55,7 +55,6 @@
                                             </div>
                                         </div>
                                         <ul class="product-meta">
-
                                             <li><a class="action" href="{{ route('compareLens.add', $lensa['id']) }}"><i
                                                         class="pe-7s-like"></i></a></li>
                                         </ul>
@@ -72,10 +71,7 @@
                                 <div class="product-images">
                                     <a href="{{ route('lensas.show', $lensa['id']) }}"><img
                                             src="{{ asset($lensa['gambar']) }}" alt="product"></a>
-
                                     <ul class="product-meta">
-
-
                                         <li><a class="action" href="{{ route('compareLens.add', $lensa['id']) }}"><i
                                                     class="pe-7s-like"></i></a></li>
                                     </ul>

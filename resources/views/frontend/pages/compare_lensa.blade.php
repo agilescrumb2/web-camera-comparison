@@ -33,7 +33,6 @@
                                         <div class="compare-product ">
                                             <div class="pack-product-container">
                                                 <div class="thumb-mask">
-
                                                     <a href="product-details.html">
                                                         <img src=" {{ isset($lensa[$id]['gambar']) ? $lensa[$id]['gambar'] : '' }}"
                                                             alt="Product">
@@ -63,7 +62,6 @@
                                 @foreach ($lensas as $id => $lensa)
                                     <td>{{ isset($lensa[$id]['bobot']) ? $lensa[$id]['bobot'] : '' }}</td>
                                 @endforeach
-
                             </tr>
                             <tr>
                                 <th>Diameter Panjang : </th>
@@ -106,7 +104,6 @@
                                     </td>
                                 @endforeach
                             </tr>
-
                         </tbody>
                     </table>
                 </div>

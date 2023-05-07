@@ -73,9 +73,7 @@
                                 <div class="product-images">
                                     <a href="{{ route('fullkits.show', $fullkit['id']) }}"><img
                                             src="{{ asset($fullkit['gambar']) }}" alt="product"></a>
-
                                     <ul class="product-meta">
-
                                         <li><a class="action" href="{{ route('compareFullkit.add', $fullkit['id']) }}"><i
                                                     class="pe-7s-like"></i></a></li>
                                     </ul>
@@ -97,7 +95,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 @endsection
