@@ -35,12 +35,13 @@
                                                 <div class="thumb-mask">
 
                                                     <a href="product-details.html">
-                                                        <img src="{{ asset('images/' . $id . '.jpg') }}" alt="Product">
+                                                        <img src=" {{ isset($fullkit[$id]['gambar']) ? $fullkit[$id]['gambar'] : '' }}"
+                                                            alt="Product">
                                                     </a>
                                                 </div>
                                                 <div class="desc-box">
                                                     <a class="product-name" href="product-details.html">
-                                                        {{ isset($fullkit[$id]['nama_fullkit']) ? $fullkit[$id]['nama_fulkit'] : '' }}
+                                                        {{ isset($fullkit[$id]['nama_fulkit']) ? $fullkit[$id]['nama_fulkit'] : '' }}
                                                     </a>
                                                     <div class="product-prices">
                                                         <span class="sale-price">
