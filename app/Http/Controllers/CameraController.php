@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
+use App\Models\Camera;
+
 class CameraController extends Controller
 {
     public function index(Request $request)
@@ -44,6 +46,13 @@ class CameraController extends Controller
         } else {
             abort(404, 'Kamera tidak ditemukan.');
         }
+    }
+
+    public function getApi() {
+
+        $camera = Camera::all();
+        return response()->json(['data' => $camera]);
+    
     }
 
 }

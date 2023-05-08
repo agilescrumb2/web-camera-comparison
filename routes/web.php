@@ -39,7 +39,7 @@ Route::get('/compareKamera', [CompareController::class, 'compare'])->name('compa
 Route::get('/compareKamera/add/{id}', [CompareController::class, 'add'])->name('compare.add');
 Route::get('/compareKamera/remove/{id}', [CompareController::class, 'remove'])->name('compare.remove');
 Route::get('/compareKamera/clear', [CompareController::class, 'clear'])->name('compare.clear');
-    Route::get('/compareLens', [CompareFullkitController::class, 'compareLens'])->name('compareFullkit');
+    Route::get('/compareFullkit', [CompareFullkitController::class, 'compareFullkit'])->name('compareFullkit');
     Route::get('/comparefullkit/addFullkit/{id}', [CompareFullkitController::class, 'addFullkit'])->name('compareFullkit.add');
     Route::get('/comparefullkit/removeFullkit/{id}', [CompareFullkitController::class, 'removeFullkit'])->name('compareFullkit.remove');
     Route::get('/comparefullkit/clearFullkit', [CompareFullkitController::class, 'clearFullkit'])->name('compareFullkit.clear');

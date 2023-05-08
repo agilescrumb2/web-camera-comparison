@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Fulkit;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 
@@ -44,6 +46,13 @@ class FullkitController extends Controller
         } else {
             abort(404, 'Fullkit tidak ditemukan.');
         }
+    }
+    
+    public function getApi() {
+
+        $fulkit = Fulkit::all();
+        return response()->json(['data' => $fulkit]);
+    
     }
 
 }
