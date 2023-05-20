@@ -55,7 +55,7 @@
                                                     href="{{ route('cameras.show', $camera['id']) }}">{{ $camera['nama_kamera'] }}</a>
                                             </h4>
                                             <div class="price">
-                                                <span class="sale-price">IDR {{ $camera['harga'] }}</span>
+                                                <span class="sale-price">Rp {{ $camera['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
@@ -88,7 +88,7 @@
                                             href="{{ route('cameras.show', $camera['id']) }}">{{ $camera['nama_kamera'] }}</a>
                                     </h4>
                                     <div class="price">
-                                        <span class="sale-price">IDR {{ $camera['harga'] }}</span>
+                                        <span class="sale-price">Rp {{ $camera['harga'] }}</span>
 
                                     </div>
                                     <p>Mode Autofokus : {{ $camera['mode_af'] }} </p>

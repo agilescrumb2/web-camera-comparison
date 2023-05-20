@@ -45,7 +45,7 @@
                         <h4 class="product-name">{{ $camera['nama_kamera'] }}</h4>
 
                         <div class="price">
-                            <span class="sale-price">IDR {{ $camera['harga'] }}</span>
+                            <span class="sale-price">Rp {{ $camera['harga'] }}</span>
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
@@ -53,79 +53,86 @@
                                         class="pe-7s-like"></i></a>
                             </div>
                         </div>
-                        <div class="product-info">
-
-                            <div class="single-info">
-                                <span class="lable">Mode Autofokus : </span>
-                                <span class="value">{{ $camera['mode_af'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Flash Internal : </span>
-                                <span class="value">{{ $camera['built_in_flash'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Kecepatan Pemotretan : </span>
-                                <span class="value">{{ $camera['kecepatan_pemotretan'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Dimensi : </span>
-                                <span class="value">{{ $camera['dimensi'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">ISO Efektif :</span>
-                                <span class="value">{{ $camera['iso_efektif'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Kompensasi Pemaparan : </span>
-                                <span class="value">{{ $camera['exposure_compensation'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Mode Flash : </span>
-                                <span class="value">{{ $camera['mode_flash'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Resolusi Gambar : </span>
-                                <span class="value">{{ $camera['resolusi_gambar'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Stabilizer Gambar : </span>
-                                <span class="value">{{ $camera['image_stabilizer'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Ukuran Monitor LCD : </span>
-                                <span class="value">{{ $camera['monitor_lcd_ukuran'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Resolusi Monitor LCD : </span>
-                                <span class="value">{{ $camera['monitor_lcd_resolusi'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Fokus Manual : </span>
-                                <span class="value">{{ $camera['fokus_manual'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Mode Pemotretan : </span>
-                                <span class="value">{{ $camera['mode_pemotretan'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Ukuran Sensor : </span>
-                                <span class="value">{{ $camera['ukuran_sensor'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Rentang Kecepatan Rana :</span>
-                                <span class="value">{{ $camera['rentang_kecepatan_rana'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Bobot : </span>
-                                <span class="value">{{ $camera['bobot'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Keseimbangan Putih : </span>
-                                <span class="value">{{ $camera['white_balance'] }}</span>
-                            </div>
-
-                            <br><br><br><br><br>
-                        </div>
+                        <br>
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="black-font">Mode Autofokus</td>
+                                    <td>{{ $camera['mode_af'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Flash Internal</td>
+                                    <td>{{ $camera['built_in_flash'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Kecepatan Pemotretan</td>
+                                    <td>{{ $camera['kecepatan_pemotretan'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Dimensi</td>
+                                    <td>{{ $camera['dimensi'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">ISO Efektif</td>
+                                    <td>{{ $camera['iso_efektif'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Kompensasi Pemaparan</td>
+                                    <td>{{ $camera['exposure_compensation'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Mode Flash</td>
+                                    <td>{{ $camera['mode_flash'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Resolusi Gambar</td>
+                                    <td>{{ $camera['resolusi_gambar'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Stabilizer Gambar</td>
+                                    <td>{{ $camera['image_stabilizer'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Ukuran Monitor LCD</td>
+                                    <td>{{ $camera['monitor_lcd_ukuran'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Resolusi Monitor LCD</td>
+                                    <td>{{ $camera['monitor_lcd_resolusi'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Fokus Manual</td>
+                                    <td>{{ $camera['fokus_manual'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Mode Pemotretan</td>
+                                    <td>{{ $camera['mode_pemotretan'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Ukuran Sensor</td>
+                                    <td>{{ $camera['ukuran_sensor'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Rentang Kecepatan Rana</td>
+                                    <td>{{ $camera['rentang_kecepatan_rana'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Bobot</td>
+                                    <td>{{ $camera['bobot'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Keseimbangan Putih</td>
+                                    <td>{{ $camera['white_balance'] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br><br><br><br><br>
                     </div>
                 </div>
             </div>
