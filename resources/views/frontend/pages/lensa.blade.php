@@ -51,7 +51,7 @@
                                                     href="{{ route('lensas.show', $lensa['id']) }}">{{ $lensa['nama_lensa'] }}</a>
                                             </h4>
                                             <div class="price">
-                                                <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
+                                                <span class="sale-price">Rp {{ $lensa['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
@@ -81,7 +81,7 @@
                                             href="{{ route('lensas.show', $lensa['id']) }}">{{ $lensa['nama_lensa'] }}</a>
                                     </h4>
                                     <div class="price">
-                                        <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
+                                        <span class="sale-price">Rp {{ $lensa['harga'] }}</span>
                                     </div>
                                     <p>Bobot : {{ $lensa['bobot'] }} </p>
                                     <p>Diameter Panjang : {{ $lensa['diameter_panjang'] }} </p>

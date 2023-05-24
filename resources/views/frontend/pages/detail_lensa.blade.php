@@ -43,7 +43,7 @@
                     <div class="product-details-description">
                         <h4 class="product-name">{{ $lensa['nama_lensa'] }}</h4>
                         <div class="price">
-                            <span class="sale-price">IDR {{ $lensa['harga'] }}</span>
+                            <span class="sale-price">Rp {{ $lensa['harga'] }}</span>
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
@@ -51,6 +51,7 @@
                                         class="pe-7s-like"></i></a>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="product-info">
                             <div class="single-info">
                                 <span class="lable">Bobot : </span>
@@ -82,6 +83,48 @@
                             </div>
                             <br><br><br><br><br>
                         </div>
+=======
+                        <br>
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="black-font">Bobot</td>
+                                    <td>{{ $lensa['bobot'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Diameter Panjang</td>
+                                    <td>{{ $lensa['diameter_panjang'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Aperture Minimum</td>
+                                    <td>{{ $lensa['aperture_minimum'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Ukuran Filter</td>
+                                    <td>{{ $lensa['ukuran_filter'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Jarak Pemfokusan Terdekat</td>
+                                    <td>{{ $lensa['jarak_pemfokusan_terdekat'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Pembesaran Maks</td>
+                                    <td>{{ $lensa['pembesaran_maks'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Jumlah Bilah Diafragma</td>
+                                    <td>{{ $lensa['jumlah_bilah_diafragma'] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br><br><br>
+>>>>>>> 8a16b1dff724951c65cc566d211626c4f6e5e6c5
                     </div>
                 </div>
             </div>

@@ -36,20 +36,20 @@
             height: auto;
         }
 
-        .btn {
-            background-color: transparent;
-            opacity: 0.7;
-            border: 2px solid #459FF1;
-            /* Ganti #000000 dengan warna yang Anda inginkan */
-            color: #fff;
-            /* Ganti #000000 dengan warna teks yang Anda inginkan */
-            text-decoration: none;
-            padding: 10px 20px;
-            transition: opacity 0.3s ease-in-out;
+        .slider-images {
+            max-width: 100%;
+            /* Lebar maksimum sesuai dengan kontainer */
+            height: auto;
+            /* Tinggi disesuaikan dengan rasio aspek gambar */
         }
 
-        .btn:hover {
-            opacity: 1;
+        @media (max-width: 414px) {
+
+            /* Untuk iPhone XR dengan lebar layar maksimal 414px */
+            .slider-images {
+                max-width: 300px;
+                /* Lebar maksimum diatur ke 300px */
+            }
         }
     </style>
 </head>
@@ -74,7 +74,22 @@
         <script src="{{ asset('assets2/js/main.js') }}"></script>
         @yield('script')
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
+        {{-- <script>
+            function sortCameras(sortBy) {
+                let url = "{{ route('cameras.index') }}";
+
+                if (sortBy === 'price_low_to_high') {
+                    url += "?sort=price_low_to_high";
+                } else if (sortBy === 'price_high_to_low') {
+                    url += "?sort=price_high_to_low";
+                } else {
+                    url += "?sort=default";
+                }
+
+                window.location.href = url;
+            }
+        </script> --}}
+        {{-- <script>
             $(document).ready(function() {
                 $('.compare-remove-form').on('submit', function(e) {
                     e.preventDefault();
@@ -97,7 +112,7 @@
                     });
                 });
             });
-        </script>
+        </script> --}}
     </body>
 
     </html>

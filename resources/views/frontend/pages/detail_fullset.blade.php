@@ -43,7 +43,7 @@
                     <div class="product-details-description">
                         <h4 class="product-name">{{ $fullkit['nama_fulkit'] }}</h4>
                         <div class="price">
-                            <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
+                            <span class="sale-price">Rp {{ $fullkit['harga'] }}</span>
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
@@ -130,6 +130,95 @@
                             </div>
                             <br><br><br><br><br>
                         </div>
+                        <br>
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="black-font">Mode Autofokus</td>
+                                    <td>{{ $fullkit['mode_af'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Flash Internal</td>
+                                    <td>{{ $fullkit['built_in_flash'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Jarak Fokus Terdekat</td>
+                                    <td>{{ $fullkit['jarak_fokus_terdekat'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Kecepatan Pemotretan</td>
+                                    <td>{{ $fullkit['kecepatan_pemotretan'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Zoom Digital</td>
+                                    <td>{{ $fullkit['zoom_digital'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Dimensi</td>
+                                    <td>{{ $fullkit['dimensi'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">ISO Efektif</td>
+                                    <td>{{ $fullkit['iso_efektif'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Mode Flash</td>
+                                    <td>{{ $fullkit['mode_flash'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Panjang Fokus</td>
+                                    <td>{{ $fullkit['panjang_fokus'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Resolusi Gambar</td>
+                                    <td>{{ $fullkit['resolusi_gambar'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Image Stabilizer</td>
+                                    <td>{{ $fullkit['image_stabilizer'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Monitor LCD Ukuran</td>
+                                    <td>{{ $fullkit['monitor_lcd_ukuran'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Monitor LCD Resolusi</td>
+                                    <td>{{ $fullkit['monitor_lcd_resolusi'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Fokus Manual</td>
+                                    <td>{{ $fullkit['fokus_manual'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Ukuran Sensor</td>
+                                    <td>{{ $fullkit['ukuran_sensor'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Mode Pemotretan</td>
+                                    <td>{{ $fullkit['mode_pemotretan'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Rentang Kecepatan Rana</td>
+                                    <td>{{ $fullkit['rentang_kecepatan_rana'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">Bobot</td>
+                                    <td>{{ $fullkit['bobot'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="black-font">White Balance</td>
+                                    <td>{{ $fullkit['white_balance'] }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br><br><br>
+                        >>>>>>> 8a16b1dff724951c65cc566d211626c4f6e5e6c5
                     </div>
                 </div>
             </div>

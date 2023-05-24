@@ -51,7 +51,7 @@
                                                     href="{{ route('fullkits.show', $fullkit['id']) }}">{{ $fullkit['nama_fulkit'] }}</a>
                                             </h4>
                                             <div class="price">
-                                                <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
+                                                <span class="sale-price">Rp {{ $fullkit['harga'] }}</span>
                                             </div>
                                         </div>
                                         <ul class="product-meta">
@@ -83,7 +83,7 @@
                                             href="{{ route('fullkits.show', $fullkit['id']) }}">{{ $fullkit['nama_fulkit'] }}</a>
                                     </h4>
                                     <div class="price">
-                                        <span class="sale-price">IDR {{ $fullkit['harga'] }}</span>
+                                        <span class="sale-price">Rp {{ $fullkit['harga'] }}</span>
                                     </div>
                                     <p>Mode Autofokus : {{ $fullkit['mode_af'] }} </p>
                                     <p>Flash Internal : {{ $fullkit['built_in_flash'] }} </p>

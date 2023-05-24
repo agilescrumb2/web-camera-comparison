@@ -49,7 +49,7 @@ Route::get('/comparelensa/removeLens/{id}', [CompareLensaController::class, 'rem
 Route::get('/comparelensa/clearLens', [CompareLensaController::class, 'clearLens'])->name('compareLens.clear');
 
 // Kamera
-Route::post('/kamera/search', [CameraController::class, 'search'])->name('cameras.search');
+Route::get('search', [CameraController::class, 'search'])->name('search');
 Route::get('/kamera', [CameraController::class, 'index'])->name('cameras.index');
 Route::get('/kamera/{id}', [CameraController::class, 'show'])->name('cameras.show');
 
