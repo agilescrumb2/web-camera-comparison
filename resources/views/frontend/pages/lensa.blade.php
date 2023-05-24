@@ -27,15 +27,6 @@
                                     class="fa fa-list"></i></button></li>
                     </ul>
                 </div>
-                {{-- <div class="shop-sort">
-                    <span class="title">Sort By :</span>
-                    <select class="nice_select">
-                        <option value="1">Default</option>
-                        <option value="2">Default</option>
-                        <option value="3">Default</option>
-                        <option value="4">Default</option>
-                    </select>
-                </div> --}}
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade" id="grid">

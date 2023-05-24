@@ -14,13 +14,13 @@ class FullkitController extends Controller
         if ($response->ok()) {
             $responseData = $response->json();
             if (isset($responseData['data'])) {
-                $cameras = $responseData['data'];
+                $fullkits = $responseData['data'];
                 return view('frontend.pages.fullset', compact('fullkits', 'request'));
             } else {
-                return redirect()->back()->with('error', 'Invalid response from API: "data" key not found.');
+                return redirect()->back()->with('error', 'Kamera Fullkit tidak ditemukan');
             }
         } else {
-            return redirect()->back()->with('error', 'Failed to retrieve camera data from API.');
+            return redirect()->back()->with('error', 'Kamera Fullkit tidak ditemukan');
         }
     }
 
@@ -33,10 +33,10 @@ class FullkitController extends Controller
             if ($fullkit) {
                 return view('frontend.pages.detail_fullset', compact('fullkit'));
             } else {
-                abort(404, 'Fullkit tidak ditemukan.');
+                abort('error', 'Kamera Fullkit tidak ditemukan');
             }
         } else {
-            abort(404, 'Fullkit tidak ditemukan.');
+            abort('error', 'Kamera Fullkit tidak ditemukan');
         }
     }
     public function getApi() {

@@ -22,7 +22,9 @@
                         <li>
                             <a href="/compare">Compare</a>
                         </li>
-                        {{-- <li><a href="/history">History</a></li> --}}
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -66,6 +68,9 @@
                 </li>
                 <li>
                     <a href="/compare">Compare</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
                 </li>
             </ul>
         </nav>

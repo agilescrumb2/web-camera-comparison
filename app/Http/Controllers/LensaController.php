@@ -12,19 +12,6 @@ class LensaController extends Controller
     {
         $response = Http::get('https://cameris.my.id/api/lensa');
         $lensas = collect($response->json());
-        // $sort = $request->input('sort');
-        // if ($sort) {
-        //     switch ($sort) {
-        //         case 'low_to_high':
-        //             $lensas = $lensas->sortBy('harga');
-        //             break;
-        //         case 'high_to_low':
-        //             $lensas = $lensas->sortByDesc('harga');
-        //             break;
-        //     }
-        // } else {
-        //     $lensas = $lensas->sortBy('harga');
-        // }
         return view('frontend.pages.lensa', compact('lensas', 'request'));
     }
 
@@ -37,14 +24,13 @@ class LensaController extends Controller
             if ($lensa) {
                 return view('frontend.pages.detail_lensa', compact('lensa'));
             } else {
-                abort(404, 'lensa tidak ditemukan.');
+                abort('error', 'Lensa tidak ditemukan');
             }
         } else {
-            abort(404, 'lensa tidak ditemukan.');
+            abort('error', 'Lensa tidak ditemukan');
         }
     }
     public function getApi() {
-
         $lensa = Lensa::all();
         return response()->json(['data' => $lensa]);
     

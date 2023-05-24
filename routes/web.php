@@ -33,6 +33,10 @@ Route::get('/compare_lensa', function () {
 Route::get('/compare_fullkit', function () {
     return view('frontend.pages.compare_fullkit');
 });
+
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+});
 Route::get('/compareKamera', [CompareController::class, 'compare'])->name('compare');
 Route::get('/compareKamera/add/{id}', [CompareController::class, 'add'])->name('compare.add');
 Route::get('/compareKamera/remove/{id}', [CompareController::class, 'remove'])->name('compare.remove');

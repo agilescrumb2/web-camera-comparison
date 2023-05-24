@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div id="about" class="section section-padding-02">
+    {{-- <div id="about" class="section section-padding-02">
         <div class="container">
             <div class="history-content text-center">
                 <div class="section-title-03">
@@ -65,5 +65,5 @@
                 <br><br><br>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

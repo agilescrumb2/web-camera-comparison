@@ -37,9 +37,6 @@
                             to Low</option>
                     </select>
                 </div> --}}
-
-
-                <!-- Sidebar Widget Start -->
                 <div class="sidebar-widget">
                     <div class="widget-search">
                         <form action="{{ route('search') }}" method="GET">
@@ -49,7 +46,6 @@
                         </form>
                     </div>
                 </div>
-                <!-- Sidebar Widget End -->
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade" id="grid">
@@ -110,8 +106,7 @@
                         @endforeach
                     </div>
                 </div>
-                <!-- Page pagination Start -->
-                <div class="page-pagination">
+                {{-- <div class="page-pagination">
                     <ul class="pagination justify-content-center">
                         <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
                         </li>
@@ -121,8 +116,7 @@
                         <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
                         </li>
                     </ul>
-                </div>
-                <!-- Page pagination End -->
+                </div> --}}
             </div>
         </div>
     </div>

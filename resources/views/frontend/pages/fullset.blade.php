@@ -41,7 +41,7 @@
                 <div class="tab-pane fade" id="grid">
                     <div class="shop-product-wrapper">
                         <div class="row">
-                            @foreach ($fullkits['data'] as $fullkit)
+                            @foreach ($fullkits as $fullkit)
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-product">
                                         <a href="{{ route('fullkits.show', $fullkit['id']) }}"><img
@@ -68,7 +68,7 @@
                 </div>
                 <div class="tab-pane fade show active" id="list">
                     <div class="shop-product-wrapper">
-                        @foreach ($fullkits['data'] as $fullkit)
+                        @foreach ($fullkits as $fullkit)
                             <div class="single-product-02 product-list">
                                 <div class="product-images">
                                     <a href="{{ route('fullkits.show', $fullkit['id']) }}"><img

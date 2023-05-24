@@ -44,13 +44,12 @@ class CompareController extends Controller
                     'bobot' => $camera['bobot'],
                     'white_balance' => $camera['white_balance'],
                 ];
-    
             $request->session()->put('compare', $cameras);
             $cameras = $request->session()->get('compare', []);
-            return view('frontend.pages.compare_kamera', compact('cameras'))->with('success', 'Camera added to compare list.');
+            return view('frontend.pages.compare_kamera', compact('cameras'))->with('success', 'Kamera ditambahkan dalam list compare');
         }
     }
-        return redirect()->back()->with('error', 'Failed to add camera to compare list.');
+        return redirect()->back()->with('error', 'Kamera tidak ditemukan');
     }
 
     public function remove(Request $request, $id)
@@ -59,14 +58,14 @@ class CompareController extends Controller
         if (isset($cameras[$id])) {
             unset($cameras[$id]);
             $request->session()->put('compare', $cameras);
-            return view('frontend.pages.compare_kamera', compact('cameras'))->with('success', 'Camera removed from compare list.');
+            return view('frontend.pages.compare_kamera', compact('cameras'))->with('success', 'Kamera dihapus dalam list compare');
         }
-        return redirect()->back()->with('error', 'Camera not found in compare list.');
+        return redirect()->back()->with('error', 'Kamera tidak ditemukan');
     }
 
     public function clear(Request $request)
     {
         $request->session()->forget('compare');
-        return redirect()->route('compare')->with('success', 'Compare list cleared.');
+        return redirect()->route('compare')->with('success', 'List Compare Dihapus.');
     }
 }

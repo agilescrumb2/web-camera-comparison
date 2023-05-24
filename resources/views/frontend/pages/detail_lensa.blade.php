@@ -51,80 +51,40 @@
                                         class="pe-7s-like"></i></a>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <div class="product-info">
-                            <div class="single-info">
-                                <span class="lable">Bobot : </span>
-                                <span class="value">{{ $lensa['bobot'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Diameter Panjang : </span>
-                                <span class="value">{{ $lensa['diameter_panjang'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Aperture Minimum : </span>
-                                <span class="value">{{ $lensa['aperture_minimum'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Ukuran Filter : </span>
-                                <span class="value">{{ $lensa['ukuran_filter'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Jarak Pemfokusan Terdekat :</span>
-                                <span class="value">{{ $lensa['jarak_pemfokusan_terdekat'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Pembesaran Maks : </span>
-                                <span class="value">{{ $lensa['pembesaran_maks'] }}</span>
-                            </div>
-                            <div class="single-info">
-                                <span class="lable">Jumlah Bilah Diafragma : </span>
-                                <span class="value">{{ $lensa['jumlah_bilah_diafragma'] }}</span>
-                            </div>
-                            <br><br><br><br><br>
-                        </div>
-=======
                         <br>
                         <table class="table table-striped">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>Label</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
-                                    <td class="black-font">Bobot</td>
+                                    <th>Bobot</td>
                                     <td>{{ $lensa['bobot'] }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="black-font">Diameter Panjang</td>
+                                    <th>Diameter Panjang</td>
                                     <td>{{ $lensa['diameter_panjang'] }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="black-font">Aperture Minimum</td>
+                                    <th>Aperture Minimum</td>
                                     <td>{{ $lensa['aperture_minimum'] }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="black-font">Ukuran Filter</td>
+                                    <th>Ukuran Filter</td>
                                     <td>{{ $lensa['ukuran_filter'] }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="black-font">Jarak Pemfokusan Terdekat</td>
+                                    <th>Jarak Pemfokusan Terdekat</td>
                                     <td>{{ $lensa['jarak_pemfokusan_terdekat'] }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="black-font">Pembesaran Maks</td>
+                                    <th>Pembesaran Maks</td>
                                     <td>{{ $lensa['pembesaran_maks'] }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="black-font">Jumlah Bilah Diafragma</td>
+                                    <th>Jumlah Bilah Diafragma</td>
                                     <td>{{ $lensa['jumlah_bilah_diafragma'] }}</td>
                                 </tr>
                             </tbody>
                         </table>
                         <br><br><br>
->>>>>>> 8a16b1dff724951c65cc566d211626c4f6e5e6c5
                     </div>
                 </div>
             </div>

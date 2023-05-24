@@ -22,10 +22,10 @@ class CameraController extends Controller
                 // }
                 return view('frontend.pages.kamera', compact('cameras', 'request'));
             } else {
-                return redirect()->back()->with('error');
+                return redirect()->back()->with('error', 'Kamera tidak ditemukan');
             }
         } else {
-            return redirect()->back()->with('error');
+            return redirect()->back()->with('error', 'Kamera tidak ditemukan');
         }
     }
     
@@ -46,13 +46,13 @@ class CameraController extends Controller
                         $filteredCameras[] = $camera;
                     }
                 }
-                $cameras = $filteredCameras; // Assign filtered cameras to $cameras
+                $cameras = $filteredCameras; 
                 return view('frontend.pages.kamera', compact('cameras', 'query', 'request'));
             } else {
-                return redirect()->back()->with('error', 'Invalid response from API: "data" key not found.');
+                return redirect()->back()->with('error', 'Kamera tidak ditemukan');
             }
         } else {
-            return redirect()->back()->with('error', 'Failed to retrieve camera data from API.');
+            return redirect()->back()->with('error', 'Kamera tidak ditemukan');
         }
     }
     public function show($id)
@@ -64,10 +64,10 @@ class CameraController extends Controller
             if ($camera) {
                 return view('frontend.pages.detail', compact('camera'));
             } else {
-                abort(404, 'Kamera tidak ditemukan.');
+                abort('error', 'Kamera tidak ditemukan');
             }
         } else {
-            abort(404, 'Kamera tidak ditemukan.');
+            abort('error', 'Kamera tidak ditemukan');
         }
     }
     public function getApi() {
