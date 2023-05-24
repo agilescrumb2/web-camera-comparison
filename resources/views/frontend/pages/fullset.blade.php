@@ -18,24 +18,24 @@
         <div class="container">
             <div class="shop-top-bar">
                 <div class="shop-text">
-                    {{-- <p><span>12</span> Product Found of <span>30</span></p> --}}
+                    <p><span></span> Daftar Fullkit</span></p>
                 </div>
                 <div class="shop-tabs">
                     <ul class="nav">
-                        <li><button data-bs-toggle="tab" data-bs-target="#grid"><i class="fa fa-th"></i></button></li>
-                        <li><button class="active" data-bs-toggle="tab" data-bs-target="#list"><i
-                                    class="fa fa-list"></i></button></li>
+                        <li><button class="active" data-bs-toggle="tab" data-bs-target="#grid"><i
+                                    class="fa fa-th"></i></button></li>
+                        <li><button data-bs-toggle="tab" data-bs-target="#list"><i class="fa fa-list"></i></button></li>
                     </ul>
                 </div>
-                {{-- <div class="shop-sort">
-                    <span class="title">Sort By :</span>
-                    <select class="nice_select">
-                        <option value="1">Default</option>
-                        <option value="2">Default</option>
-                        <option value="3">Default</option>
-                        <option value="4">Default</option>
-                    </select>
-                </div> --}}
+                <div class="sidebar-widget">
+                    <div class="widget-search">
+                        <form action="{{ route('searchFullkit') }}" method="GET">
+                            <input type="text" name="query" value="{{ $request->input('query') }}"
+                                placeholder="Search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade" id="grid">

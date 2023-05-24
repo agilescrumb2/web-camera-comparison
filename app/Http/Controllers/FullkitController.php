@@ -24,6 +24,33 @@ class FullkitController extends Controller
         }
     }
 
+    public function searchFullkit(Request $request)
+    {
+        $query = $request->input('query');
+        $response = Http::get('https://cameris.my.id/api/fulkit');
+        $fullkits = []; 
+        if ($response->ok()) {
+            $fullkitData = $response->json();
+            if (isset($fullkitData['data'])) {
+                $originalFullkits = $fullkitData['data'];
+                $filteredFullkits = [];
+                foreach ($originalFullkits as $fullkit) {
+                    $namaFullkit = strtolower($fullkit['nama_fulkit']);
+                    $hargaFullkit = strtolower($fullkit['harga']);
+                    if (strpos($namaFullkit, strtolower($query)) !== false || (float)$hargaFullkit <= (float)$query) {
+                        $filteredFullkits[] = $fullkit;
+                    }
+                }
+                $fullkits = $filteredFullkits; 
+                return view('frontend.pages.fullset', compact('fullkits', 'query', 'request'));
+            } else {
+                return redirect()->back()->with('error', 'Fullkit tidak ditemukan');
+            }
+        } else {
+            return redirect()->back()->with('error', 'Fullkit tidak ditemukan');
+        }
+    }
+    
     public function show($id)
     {
         $response = Http::get("https://cameris.my.id/api/fulkit?id={$id}");

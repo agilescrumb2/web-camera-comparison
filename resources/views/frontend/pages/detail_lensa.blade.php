@@ -47,8 +47,8 @@
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
-                                <a class="action" href="{{ route('compareLens.add', $lensa['id']) }}"><i
-                                        class="pe-7s-like"></i></a>
+                                <a href="{{ route('compareLens.add', $lensa['id']) }}"
+                                    class="btn btn-primary btn-hover-dark">Compare Lensa</a>
                             </div>
                         </div>
                         <br>
@@ -56,7 +56,7 @@
                             <tbody>
                                 <tr>
                                     <th>Bobot</td>
-                                    <td>{{ $lensa['bobot'] }}</td>
+                                    <td>{{ $lensa['bobot'] }} gram</td>
                                 </tr>
                                 <tr>
                                     <th>Diameter Panjang</td>

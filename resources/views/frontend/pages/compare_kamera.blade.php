@@ -161,7 +161,7 @@
                             <tr>
                                 <th>Bobot : </th>
                                 @foreach ($cameras as $id => $camera)
-                                    <td>{{ $camera['bobot'] }}</td>
+                                    <td>{{ $camera['bobot'] }} gram</td>
                                 @endforeach
                             </tr>
                             <tr>

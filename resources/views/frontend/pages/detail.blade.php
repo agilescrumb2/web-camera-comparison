@@ -122,7 +122,7 @@
                                 </tr>
                                 <tr>
                                     <th>Bobot</td>
-                                    <td>{{ $camera['bobot'] }}</td>
+                                    <td>{{ $camera['bobot'] }} gram </td>
                                 </tr>
                                 <tr>
                                     <th>Keseimbangan Putih</td>

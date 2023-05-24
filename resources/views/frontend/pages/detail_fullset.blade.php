@@ -47,8 +47,8 @@
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
-                                <a class="action" href="{{ route('compareFullkit.add', $fullkit['id']) }}"><i
-                                        class="pe-7s-like"></i></a>
+                                <a href="{{ route('compareFullkit.add', $fullkit['id']) }}"
+                                    class="btn btn-primary btn-hover-dark">Compare Fullkit</a>
                             </div>
                         </div>
                         <br>
@@ -124,7 +124,7 @@
                                 </tr>
                                 <tr>
                                     <th>Bobot</td>
-                                    <td>{{ $fullkit['bobot'] }}</td>
+                                    <td>{{ $fullkit['bobot'] }} gram</td>
                                 </tr>
                                 <tr>
                                     <th>White Balance</td>

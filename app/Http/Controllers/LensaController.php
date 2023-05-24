@@ -11,10 +11,46 @@ class LensaController extends Controller
     public function index(Request $request)
     {
         $response = Http::get('https://cameris.my.id/api/lensa');
-        $lensas = collect($response->json());
-        return view('frontend.pages.lensa', compact('lensas', 'request'));
+        if ($response->ok()) {
+            $responseData = $response->json();
+            if (isset($responseData['data'])) {
+                $lensas = $responseData['data'];
+                return view('frontend.pages.lensa', compact('lensas', 'request'));
+            } else {
+                return redirect()->back()->with('error', 'Lensa tidak ditemukan');
+            }
+        } else {
+            return redirect()->back()->with('error', 'Lensa tidak ditemukan');
+        }
     }
 
+    public function searchLens(Request $request)
+    {
+        $query = $request->input('query');
+        $response = Http::get('https://cameris.my.id/api/lensa');
+        $lensas = []; 
+        if ($response->ok()) {
+            $lensaData = $response->json();
+            if (isset($lensaData['data'])) {
+                $originalLensas = $lensaData['data'];
+                $filteredLensas = [];
+                foreach ($originalLensas as $lensa) {
+                    $namaLensa = strtolower($lensa['nama_lensa']);
+                    $hargaLensa = strtolower($lensa['harga']);
+                    if (strpos($namaLensa, strtolower($query)) !== false || (float)$hargaLensa <= (float)$query) {
+                        $filteredLensas[] = $lensa;
+                    }
+                }
+                $lensas = $filteredLensas; 
+                return view('frontend.pages.lensa', compact('lensas', 'query', 'request'));
+            } else {
+                return redirect()->back()->with('error', 'Lensa tidak ditemukan');
+            }
+        } else {
+            return redirect()->back()->with('error', 'Lensa tidak ditemukan');
+        }
+    }
+    
     public function show($id)
     {
         $response = Http::get("https://cameris.my.id/api/lensa?id={$id}");

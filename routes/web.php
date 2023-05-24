@@ -58,11 +58,11 @@ Route::get('/kamera', [CameraController::class, 'index'])->name('cameras.index')
 Route::get('/kamera/{id}', [CameraController::class, 'show'])->name('cameras.show');
 
 // Lensa
-Route::post('/lensa/search', [LensaController::class, 'search'])->name('lensas.search');
+Route::get('searchLens', [LensaController::class, 'searchLens'])->name('searchLens');
 Route::get('/lensa', [LensaController::class, 'index'])->name('lensas.index');
 Route::get('/lensa/{id}', [LensaController::class, 'show'])->name('lensas.show');
 
 // Fullkit
-Route::post('/fullkit/search', [FullkitController::class, 'search'])->name('fullkits.search');
+Route::get('searchFullkit', [FullkitController::class, 'searchFullkit'])->name('searchFullkit');
 Route::get('/fullkit', [FullkitController::class, 'index'])->name('fullkits.index');
 Route::get('/fullkit/{id}', [FullkitController::class, 'show'])->name('fullkits.show');
