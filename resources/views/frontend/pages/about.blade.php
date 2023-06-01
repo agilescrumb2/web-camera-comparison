@@ -50,7 +50,7 @@
                 </p>
             </div>
             <div class="history-icon text-center">
-                <img src="{{ asset('assets2/images/icon/icon-5.jpg') }}" alt="Icon">
+                <img src="" alt="">
             </div>
         </div>
     </div>

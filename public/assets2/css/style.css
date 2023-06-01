@@ -17765,7 +17765,7 @@ only screen and (max-width: 767px) {
 /*----------------------------------------*/
 
 .slider-section {
-    background: radial-gradient(circle at center, #A773FF, #402278, #1E0847);
+    background: radial-gradient(circle at center, #402278, #1E0847, #1E0847);
     position: relative;
     overflow: hidden;
 }
@@ -19226,7 +19226,7 @@ only screen and (max-width: 767px) {
 }
 
 .call-to-action-content .title {
-    color: #ffb300;
+    color: #1E0847;
     font-size: 72px;
     font-weight: 400;
     font-family: "Great Vibes", cursive;
@@ -19752,7 +19752,7 @@ only screen and (max-width: 575px) {
 
 .countdown-images .shape-1 {
     border-radius: 50%;
-    background-color: #ffb300;
+    background-color: #1E0847;
     position: absolute;
     left: 50px;
     top: 0px;
@@ -19762,8 +19762,8 @@ only screen and (max-width: 575px) {
 }
 
 .countdown-images .shape-2 {
-    background: -webkit-linear-gradient(0deg, #f8a324 0%, #ef4923 100%);
-    background: -ms-linear-gradient(0deg, #f8a324 0%, #ef4923 100%);
+    background: -webkit-linear-gradient(0deg, #6f42c1 0%, #ef4923 100%);
+    background: -ms-linear-gradient(0deg, #6f42c1 0%, #ef4923 100%);
     -webkit-box-shadow: 0px 0px 24px 6px rgba(104, 104, 104, 0.16);
     box-shadow: 0px 0px 24px 6px rgba(104, 104, 104, 0.16);
     position: absolute;
@@ -19943,7 +19943,7 @@ only screen and (max-width: 767px) {
     display: inline-block;
     color: #fff;
     border-radius: 50%;
-    background-color: rgba(255, 179, 0, 0.81);
+    background-color: rgba(230, 0, 242, 0.81);
 }
 
 .marker-wrapper .image-pointer .pointer-box {
@@ -20166,7 +20166,7 @@ only screen and (max-width: 767px) {
     content: '';
     width: 100%;
     height: 1px;
-    background-color: #fcdd93;
+    background-color: #6f42c1;
     top: 50%;
     left: 0;
     -webkit-transform: translateY(-50%);
@@ -20212,7 +20212,7 @@ only screen and (max-width: 767px) {
 }
 
 .single-counter .count {
-    color: #ffb300;
+    color: #CA61FF;
     font-weight: 600;
     font-family: "Rajdhani", sans-serif;
     display: block;
@@ -20430,7 +20430,7 @@ only screen and (max-width: 767px) {
 }
 
 .shop-top-bar .shop-text p span {
-    color: #ffb300;
+    color: #CA61FF;
 }
 
 @media only screen and (max-width: 575px) {
@@ -20825,8 +20825,8 @@ only screen and (max-width: 767px) {
 
 .product-details-description .product-color ul li input[type="checkbox"]:checked+label span,
 .product-details-description .product-color ul li input[type="radio"]:checked+label span {
-    background-color: #ffb300;
-    border-color: #ffb300;
+    background-color: #CA61FF;
+    border-color: #CA61FF;
 }
 
 .product-details-description .product-color ul li input[type="checkbox"]:checked+label span::before,
@@ -22894,7 +22894,7 @@ only screen and (max-width: 575px) {
 }
 
 .contact-info-items .single-contact-info:hover {
-    border-color: #ffedc8;
+    border-color: #CA61FF;
 }
 
 .contact-form {
