@@ -32,12 +32,13 @@
                                         <div class="compare-product ">
                                             <div class="pack-product-container">
                                                 <div class="thumb-mask">
-                                                    <a href="product-details.html">
+                                                    <a href="{{ route('fullkits.show', $fullkit['id']) }}">
                                                         <img src=" {{ $fullkit['gambar'] }}" alt="Product">
                                                     </a>
                                                 </div>
                                                 <div class="desc-box">
-                                                    <a class="product-name" href="product-details.html">
+                                                    <a class="product-name"
+                                                        href="{{ route('fullkits.show', $fullkit['id']) }}">
                                                         {{ $fullkit['nama_fulkit'] }}
                                                     </a>
                                                     <div class="product-prices">

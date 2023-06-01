@@ -14,12 +14,6 @@ class CameraController extends Controller
             $responseData = $response->json();
             if (isset($responseData['data'])) {
                 $cameras = $responseData['data'];
-                // Sort cameras based on the selected option
-                // if ($sort === 'price_low_to_high') {
-                //     $cameras = collect($cameras)->sortBy('harga')->values()->all();
-                // } elseif ($sort === 'price_high_to_low') {
-                //     $cameras = collect($cameras)->sortByDesc('harga')->values()->all();
-                // }
                 return view('frontend.pages.kamera', compact('cameras', 'request'));
             } else {
                 return redirect()->back()->with('error', 'Kamera tidak ditemukan');

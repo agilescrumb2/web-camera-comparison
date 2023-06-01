@@ -24,10 +24,10 @@
                         <form>
                             <label for="price_filter">Filter Harga:</label>
                             <select name="price_filter" id="price_filter" onchange="redirectToSearch()">
-                            <option value="">Default</option>
-                            <option value="20">Dibawah 20 Juta</option>
-                            <option value="50">Dibawah 50 Juta</option>
-                            <option value="150">Dibawah 150 Juta</option>   
+                                <option value="">Default</option>
+                                <option value="20">Dibawah 20 Juta</option>
+                                <option value="50">Dibawah 50 Juta</option>
+                                <option value="150">Dibawah 150 Juta</option>
                             </select>
                         </form>
                     </div>
@@ -67,7 +67,6 @@
                                             </div>
                                         </div>
                                         <ul class="product-meta">
-
                                             <li><a class="action"
                                                     href="{{ route('compareFullkit.add', $fullkit['id']) }}"><i
                                                         class="pe-7s-like"></i></a></li>
@@ -116,11 +115,12 @@
         if (selectedPriceFilter !== null) {
             priceFilterSelect.value = selectedPriceFilter;
         }
+
         function redirectToSearch() {
-          var query = "{{ $request->input('query') }}";
-          var priceFilter = document.getElementById("price_filter").value;
-          var url = "{{ route('searchFullkit') }}?query=" + query + "&price_filter=" + priceFilter;
-          window.location.href = url;
+            var query = "{{ $request->input('query') }}";
+            var priceFilter = document.getElementById("price_filter").value;
+            var url = "{{ route('searchFullkit') }}?query=" + query + "&price_filter=" + priceFilter;
+            window.location.href = url;
         }
-      </script>
+    </script>
 @endsection

@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/Logo Kamera Comparison.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/iconcameris1.png') }}">
     <link rel="stylesheet" href="{{ asset('assets2/css/plugins/pe-icon-7-stroke.css') }}">
     <link rel="stylesheet" href="{{ asset('assets2/css/plugins/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets2/css/plugins/animate.min.css') }}">
@@ -38,17 +38,12 @@
 
         .slider-images {
             max-width: 100%;
-            /* Lebar maksimum sesuai dengan kontainer */
             height: auto;
-            /* Tinggi disesuaikan dengan rasio aspek gambar */
         }
 
         @media (max-width: 414px) {
-
-            /* Untuk iPhone XR dengan lebar layar maksimal 414px */
             .slider-images {
-                max-width: 300px;
-                /* Lebar maksimum diatur ke 300px */
+                max-width: 500px;
             }
         }
     </style>
@@ -74,45 +69,6 @@
         <script src="{{ asset('assets2/js/main.js') }}"></script>
         @yield('script')
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        {{-- <script>
-            function sortCameras(sortBy) {
-                let url = "{{ route('cameras.index') }}";
-
-                if (sortBy === 'price_low_to_high') {
-                    url += "?sort=price_low_to_high";
-                } else if (sortBy === 'price_high_to_low') {
-                    url += "?sort=price_high_to_low";
-                } else {
-                    url += "?sort=default";
-                }
-
-                window.location.href = url;
-            }
-        </script> --}}
-        {{-- <script>
-            $(document).ready(function() {
-                $('.compare-remove-form').on('submit', function(e) {
-                    e.preventDefault();
-
-                    var form = $(this);
-                    var url = form.attr('action');
-                    var csrfToken = form.find('input[name="_token"]').val();
-                    $.ajax({
-                        url: url,
-                        type: 'POST',
-                        data: {
-                            _token: csrfToken
-                        },
-                        success: function(response) {
-                            // Tindakan setelah penghapusan berhasil dilakukan
-                        },
-                        error: function(xhr) {
-                            // Tindakan jika terjadi kesalahan saat penghapusan
-                        }
-                    });
-                });
-            });
-        </script> --}}
     </body>
 
     </html>

@@ -21,13 +21,13 @@
                     <p><span></span> Daftar Body Kamera </span></p>
                     <br>
                     <form>
-                      <label for="price_filter">Filter Harga:</label>
-                      <select name="price_filter" id="price_filter" onchange="redirectToSearch()">
-                        <option value="">Default</option>
-                        <option value="20">Dibawah 20 Juta</option>
-                        <option value="50">Dibawah 50 Juta</option>
-                        <option value="150">Dibawah 150 Juta</option>
-                      </select>
+                        <span class="title" for="price_filter">Filter Harga:</span>
+                        <select name="price_filter" id="price_filter" onchange="redirectToSearch()">
+                            <option value="">Default</option>
+                            <option value="20">Dibawah 20 Juta</option>6f42c1
+                            <option value="50">Dibawah 50 Juta</option>
+                            <option value="150">Dibawah 150 Juta</option>
+                        </select>
                     </form>
                 </div>
                 <div class="shop-tabs">
@@ -37,16 +37,6 @@
                         <li><button data-bs-toggle="tab" data-bs-target="#list"><i class="fa fa-list"></i></button></li>
                     </ul>
                 </div>
-                {{-- <div class="shop-sort">
-                    <span class="title">Sort By:</span>
-                    <select class="nice_select" onchange="sortCameras(this.value)">
-                        <option value="default" {{ $sort === 'default' ? 'selected' : '' }}>Default</option>
-                        <option value="price_low_to_high" {{ $sort === 'price_low_to_high' ? 'selected' : '' }}>Price: Low
-                            to High</option>
-                        <option value="price_high_to_low" {{ $sort === 'price_high_to_low' ? 'selected' : '' }}>Price: High
-                            to Low</option>
-                    </select>
-                </div> --}}
                 <div class="sidebar-widget">
                     <div class="widget-search">
                         <form action="{{ route('search') }}" method="GET">
@@ -116,17 +106,6 @@
                         @endforeach
                     </div>
                 </div>
-                {{-- <div class="page-pagination">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
             </div>
         </div>
     </div>
@@ -137,11 +116,12 @@
         if (selectedPriceFilter !== null) {
             priceFilterSelect.value = selectedPriceFilter;
         }
+
         function redirectToSearch() {
-          var query = "{{ $request->input('query') }}";
-          var priceFilter = document.getElementById("price_filter").value;
-          var url = "{{ route('search') }}?query=" + query + "&price_filter=" + priceFilter;
-          window.location.href = url;
+            var query = "{{ $request->input('query') }}";
+            var priceFilter = document.getElementById("price_filter").value;
+            var url = "{{ route('search') }}?query=" + query + "&price_filter=" + priceFilter;
+            window.location.href = url;
         }
-      </script> 
+    </script>
 @endsection

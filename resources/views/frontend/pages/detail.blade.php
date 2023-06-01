@@ -47,12 +47,6 @@
                         </div>
                         <div class="product-meta">
                             <div class="meta-action">
-                                {{-- <div class="left-btn">
-                                    <a href="shop-grid-left-sidebar.html" class="btn btn-dark btn-hover-primary">Continue
-                                        Shopping</a>
-                                </div> --}}
-                                {{-- <a class="action" href="{{ route('compare.add', $camera['id']) }}"><i
-                                        class="pe-7s-like"></i></a> --}}
                                 <a href="{{ route('compare.add', $camera['id']) }}"
                                     class="btn btn-primary btn-hover-dark">Compare Body Kamera</a>
                             </div>
@@ -130,7 +124,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <br><br><br><br><br>
+                        <br>
                     </div>
                 </div>
             </div>

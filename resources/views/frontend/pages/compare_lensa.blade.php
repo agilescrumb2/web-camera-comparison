@@ -32,12 +32,12 @@
                                         <div class="compare-product ">
                                             <div class="pack-product-container">
                                                 <div class="thumb-mask">
-                                                    <a href="product-details.html">
+                                                    <a href="{{ route('lensas.show', $lensa['id']) }}">
                                                         <img src=" {{ $lensa['gambar'] }}" alt="Product">
                                                     </a>
                                                 </div>
                                                 <div class="desc-box">
-                                                    <a class="product-name" href="product-details.html">
+                                                    <a class="product-name" href="{{ route('lensas.show', $lensa['id']) }}">
                                                         {{ $lensa['nama_lensa'] }}
                                                     </a>
                                                     <div class="product-prices">

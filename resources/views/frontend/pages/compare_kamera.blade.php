@@ -23,24 +23,23 @@
                             <tr>
                                 <th>
                                     <a href="/kamera" class="btn btn-primary btn-hover-dark">+ List Body Kamera</a>
-                                    {{-- <a href="/kamera">Tambah data</a> --}}
                                 </th>
                                 @php
                                     $cameras = session('compare', []);
                                 @endphp
                                 @if (!empty($cameras))
-                                    {{-- @php $index = 0; @endphp --}}
                                     @foreach ($cameras as $id => $camera)
                                         <td>
                                             <div class="compare-product ">
                                                 <div class="pack-product-container">
                                                     <div class="thumb-mask">
-                                                        <a href="product-details.html">
+                                                        <a href="{{ route('cameras.show', $camera['id']) }}">
                                                             <img src=" {{ $camera['gambar'] }}" alt="Product">
                                                         </a>
                                                     </div>
                                                     <div class="desc-box">
-                                                        <a class="product-name" href="product-details.html">
+                                                        <a class="product-name"
+                                                            href="{{ route('cameras.show', $camera['id']) }}">
                                                             {{ $camera['nama_kamera'] }}
                                                         </a>
                                                         <div class="product-prices">
@@ -54,7 +53,6 @@
                                                     class="compare-remove">Remove</a>
                                             </div>
                                         </td>
-                                        {{-- @php $index++; @endphp --}}
                                     @endforeach
                                 @endif
                             </tr>
