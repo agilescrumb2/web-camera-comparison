@@ -3,7 +3,7 @@
     Kamera
 @endsection
 @section('content')
-    <div class="section page-banner-section" style="background-image: url({{ asset('images/img.jpg') }});">
+    <div class="section page-banner-section" style="background-image: url({{ asset('images/ab.jpg') }});">
         <div class="container">
             <div class="page-banner-content">
                 <h2 class="title">Daftar Kamera</h2>

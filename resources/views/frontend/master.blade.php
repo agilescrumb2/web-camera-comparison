@@ -26,7 +26,7 @@
 
         .header-logo a {
             display: block;
-            width: 80px;
+            width: 50px;
             /* sesuaikan ukuran logo dengan kebutuhan Anda */
             height: auto;
         }

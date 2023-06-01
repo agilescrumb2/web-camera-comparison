@@ -15665,7 +15665,6 @@ img {
 }
 
 
-
 /* tab Content */
 
 .tab-content .tab-pane {
@@ -17766,7 +17765,7 @@ only screen and (max-width: 767px) {
 /*----------------------------------------*/
 
 .slider-section {
-    background: radial-gradient(circle at center, #A773FF, #402278, #402278);
+    background: radial-gradient(circle at center, #7E5BEE, #402278, #1E0847);
     position: relative;
     overflow: hidden;
 }
@@ -20080,7 +20079,7 @@ only screen and (max-width: 767px) {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 450px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -24030,6 +24029,7 @@ only screen and (max-width: 767px) {
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 
 /*--------------------------------------------------------------
 9. Iconbox
