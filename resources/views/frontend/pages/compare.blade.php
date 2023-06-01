@@ -8,7 +8,7 @@
             <div class="page-banner-content">
                 <h2 class="title">Compare</h2>
                 <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li class="active">Compare</li>
                 </ul>
             </div>
