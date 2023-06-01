@@ -330,7 +330,7 @@ button {
 a:hover,
 .cs-link:hover {
     text-decoration: none;
-    color: #6990FF;
+    color: #6f42c1;
 }
 
 table {
@@ -434,7 +434,7 @@ kbd {
     border-width: 3px;
     border-style: solid;
     border-color: rgba(105, 144, 255, 0.2);
-    border-top-color: #6990FF;
+    border-top-color: #6f42c1;
     border-radius: 50%;
     position: absolute;
     width: calc(100% + 6px);
@@ -858,7 +858,7 @@ hr {
 
 .cs-accent_color,
 .cs-accent_color_hover:hover {
-    color: #6990FF;
+    color: #6f42c1;
 }
 
 .cs-white_bg {
@@ -871,7 +871,7 @@ hr {
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-    background-color: #6990FF;
+    background-color: #6f42c1;
 }
 
 .cs-primary_bg,
@@ -929,7 +929,7 @@ hr {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #6990FF;
+    background-color: #6f42c1;
     color: #fff;
     border: none;
     border-radius: 7px;
@@ -967,7 +967,7 @@ hr {
 }
 
 .cs-btn:before {
-    border: 1px solid #6990FF;
+    border: 1px solid #6f42c1;
     z-index: 3;
 }
 
@@ -1059,8 +1059,8 @@ hr {
 
 .cs-accent_btn {
     color: #fff;
-    background-color: #6990FF;
-    border-color: #6990FF;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
 }
 
 .cs-accent_btn:hover {
@@ -1105,8 +1105,8 @@ hr {
 
 .cs-primary_btn:hover {
     color: #fff;
-    background-color: #6990FF;
-    border-color: #6990FF;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
 }
 
 .cs-primary_btn:hover::after {
@@ -1200,7 +1200,7 @@ hr {
 }
 
 .cs-form_field:focus {
-    border-color: #6990FF;
+    border-color: #6f42c1;
 }
 
 .cs-right_full_width {
@@ -1220,7 +1220,7 @@ hr {
 }
 
 .cs-accordian_title span {
-    color: #6990FF;
+    color: #6f42c1;
 }
 
 .cs-accordian_head {
@@ -1238,7 +1238,7 @@ hr {
     top: 18px;
     right: 20px;
     border-radius: 50%;
-    color: #6990FF;
+    color: #6f42c1;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -1381,7 +1381,7 @@ hr {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    background-color: #6990FF;
+    background-color: #6f42c1;
     border-radius: 10px;
     padding: 85px 0;
     position: relative;
@@ -1477,7 +1477,7 @@ hr {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #6990FF;
+    color: #6f42c1;
     cursor: pointer;
 }
 
@@ -1541,8 +1541,8 @@ hr {
 }
 
 .cs-check input:checked+label::before {
-    background-color: #6990FF;
-    border-color: #6990FF;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
 }
 
 .cs-check input:checked+label::after {
@@ -1846,7 +1846,7 @@ hr {
 #author:focus,
 #email:focus {
     outline: none;
-    border-color: #6990FF;
+    border-color: #6f42c1;
 }
 
 #comment {
@@ -2008,7 +2008,7 @@ hr {
 }
 
 .comment-list .fn a:hover {
-    color: #6990FF;
+    color: #6f42c1;
 }
 
 .comment-list .comment-meta a:hover {
@@ -2022,7 +2022,7 @@ hr {
 
 .comment-list .reply a {
     font-weight: 500;
-    color: #6990FF;
+    color: #6f42c1;
     display: inline-block;
     position: absolute;
     top: 5px;
@@ -2036,8 +2036,8 @@ hr {
 
 .comment-list .reply a:hover {
     color: #fff;
-    background-color: #6990FF;
-    border-color: #6990FF;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
 }
 
 .comment-list .children .comment-body {
@@ -2059,7 +2059,7 @@ hr {
 
 #commentform p.logged-in-as a:hover {
     text-decoration: underline;
-    color: #6990FF;
+    color: #6f42c1;
 }
 
 .comment-reply-title small {
@@ -2885,7 +2885,7 @@ hr {
         background-color: #fff;
         -webkit-box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
         box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
-        border-top: 3px solid #6990FF;
+        border-top: 3px solid #6f42c1;
         padding: 10px 0;
         z-index: 100;
         opacity: 0;
@@ -3657,7 +3657,7 @@ hr {
     -ms-flex: none;
     flex: none;
     border-radius: 50%;
-    background-color: #6990FF;
+    background-color: #6f42c1;
     margin-bottom: 28px;
     -webkit-transition: all .25s linear;
     transition: all .25s linear;
@@ -3684,7 +3684,7 @@ hr {
     font-size: 60px;
     line-height: 1em;
     color: transparent;
-    -webkit-text-stroke: 1px #52C8C4;
+    -webkit-text-stroke: 1px #b543b7;
     position: absolute;
     right: 15px;
     top: 15px;
@@ -3877,7 +3877,7 @@ hr {
 }
 
 .cs-post.cs-style1 .cs-post_title:hover {
-    color: #6990FF;
+    color: #6f42c1;
 }
 
 .cs-post.cs-style1 .cs-text_btn svg {
@@ -4050,8 +4050,8 @@ hr {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    border: 1px solid #6990FF;
-    color: #6990FF;
+    border: 1px solid #6f42c1;
+    color: #6f42c1;
     background-color: #fff;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -4067,7 +4067,7 @@ hr {
 }
 
 .cs-testimonial.cs-style1:hover .cs-quote {
-    background-color: #6990FF;
+    background-color: #6f42c1;
     color: #fff;
 }
 
