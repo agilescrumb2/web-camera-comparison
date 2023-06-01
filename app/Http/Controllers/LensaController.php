@@ -27,21 +27,31 @@ class LensaController extends Controller
     public function searchLens(Request $request)
     {
         $query = $request->input('query');
+        $priceFilter = $request->input('price_filter');
+
         $response = Http::get('https://cameris.my.id/api/lensa');
-        $lensas = []; 
+        $lensas = [];
+
         if ($response->ok()) {
             $lensaData = $response->json();
             if (isset($lensaData['data'])) {
                 $originalLensas = $lensaData['data'];
                 $filteredLensas = [];
+
                 foreach ($originalLensas as $lensa) {
                     $namaLensa = strtolower($lensa['nama_lensa']);
                     $hargaLensa = strtolower($lensa['harga']);
-                    if (strpos($namaLensa, strtolower($query)) !== false || (float)$hargaLensa <= (float)$query) {
+
+                    // Filter berdasarkan query dan price_filter
+                    if (
+                        (strpos($namaLensa, strtolower($query)) !== false || (float)$hargaLensa <= (float)$query) &&
+                        (!$priceFilter || (float)$hargaLensa <= (float)$priceFilter)
+                    ) {
                         $filteredLensas[] = $lensa;
                     }
                 }
-                $lensas = $filteredLensas; 
+
+                $lensas = $filteredLensas;
                 return view('frontend.pages.lensa', compact('lensas', 'query', 'request'));
             } else {
                 return redirect()->back()->with('error', 'Lensa tidak ditemukan');
@@ -50,6 +60,7 @@ class LensaController extends Controller
             return redirect()->back()->with('error', 'Lensa tidak ditemukan');
         }
     }
+
     
     public function show($id)
     {

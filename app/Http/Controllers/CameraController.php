@@ -32,6 +32,7 @@ class CameraController extends Controller
     public function search(Request $request)
     {
         $query = $request->input('query');
+        $priceFilter = $request->input('price_filter');
         $response = Http::get('https://cameris.my.id/api/camera');
         $cameras = []; 
         if ($response->ok()) {
@@ -42,7 +43,8 @@ class CameraController extends Controller
                 foreach ($originalCameras as $camera) {
                     $namaKamera = strtolower($camera['nama_kamera']);
                     $hargaKamera = strtolower($camera['harga']);
-                    if (strpos($namaKamera, strtolower($query)) !== false || (float)$hargaKamera <= (float)$query) {
+                    if (strpos($namaKamera, strtolower($query)) !== false &&
+                        ($priceFilter === null || (float)$hargaKamera <= (float)$priceFilter)) {
                         $filteredCameras[] = $camera;
                     }
                 }

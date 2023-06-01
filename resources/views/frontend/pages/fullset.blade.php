@@ -19,6 +19,18 @@
             <div class="shop-top-bar">
                 <div class="shop-text">
                     <p><span></span> Daftar Fullkit</span></p>
+                    <br>
+                    <div>
+                        <form>
+                            <label for="price_filter">Filter Harga:</label>
+                            <select name="price_filter" id="price_filter" onchange="redirectToSearch()">
+                            <option value="">Default</option>
+                            <option value="20">Dibawah 20 Juta</option>
+                            <option value="50">Dibawah 50 Juta</option>
+                            <option value="150">Dibawah 150 Juta</option>   
+                            </select>
+                        </form>
+                    </div>
                 </div>
                 <div class="shop-tabs">
                     <ul class="nav">
@@ -97,4 +109,18 @@
             </div>
         </div>
     </div>
+    <script>
+        var priceFilterSelect = document.getElementById("price_filter");
+        var currentUrl = new URL(window.location.href);
+        var selectedPriceFilter = currentUrl.searchParams.get("price_filter");
+        if (selectedPriceFilter !== null) {
+            priceFilterSelect.value = selectedPriceFilter;
+        }
+        function redirectToSearch() {
+          var query = "{{ $request->input('query') }}";
+          var priceFilter = document.getElementById("price_filter").value;
+          var url = "{{ route('searchFullkit') }}?query=" + query + "&price_filter=" + priceFilter;
+          window.location.href = url;
+        }
+      </script>
 @endsection
