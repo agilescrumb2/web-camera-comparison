@@ -3850,7 +3850,7 @@ fieldset:disabled .btn {
 .btn-warning:focus {
     color: #000;
     background-color: #6f42c1;
-    border-color: #ff6f42c1c720;
+    border-color: rgba(255, 111, 66, 0.75);
     -webkit-box-shadow: 0 0 0 0 rgba(230, 0, 242, 0.5);
     box-shadow: 0 0 0 0 rgba(230, 0, 242, 0.5);
 }
@@ -21671,11 +21671,11 @@ only screen and (max-width: 767px) {
     white-space: nowrap;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 365px) {
     .compare-wrapper .table tbody tr th {
         display: none;
     }
-}
+} */
 
 .compare-wrapper .table tbody tr td {
     font-weight: 500;
@@ -24225,6 +24225,20 @@ only screen and (max-width: 767px) {
     .cs-iconbox.cs-style2 .cs-iconbox_title {
         font-size: 18px;
     }
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  
+option {
+    background-color: #fff;
+    color: #000;
 }
 
 
